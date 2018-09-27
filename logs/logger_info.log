@@ -1,0 +1,39 @@
+2018-09-28 00:00:13,953 | root | MainThread   | init_logging:12 || INFO | -------------------------------------------------------- |
+2018-09-28 00:00:13,954 | root | MainThread   | init_logging:13 || INFO | -------           New Logging session            ------- |
+2018-09-28 00:00:13,954 | root | MainThread   | init_logging:14 || INFO | -------------------------------------------------------- |
+2018-09-28 00:00:13,955 | __main__ | MainThread   | <module>:17 || INFO | Hello
+2018-09-28 00:00:13,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-09-28 00:00:13,981 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:00:13,983 | Models.Reading | MainThread   | __init__:8 || INFO | Init Reading
+2018-09-28 00:00:13,984 | Models.Reading | MainThread   | __str__:14 || INFO | Reading toString
+2018-09-28 00:00:13,986 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-09-28 00:00:13,987 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:00:13,989 | Models.WellReading | MainThread   | calculate_volume:21 || INFO | Calculating Volume
+2018-09-28 00:00:13,989 | Models.WellReading | MainThread   | __str__:33 || INFO | WellReading toString
+2018-09-28 00:00:13,990 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:00:54,721 | root | MainThread   | init_logging:12 || INFO | -------------------------------------------------------- |
+2018-09-28 00:00:54,721 | root | MainThread   | init_logging:13 || INFO | -------           New Logging session            ------- |
+2018-09-28 00:00:54,722 | root | MainThread   | init_logging:14 || INFO | -------------------------------------------------------- |
+2018-09-28 00:00:54,722 | __main__ | MainThread   | <module>:17 || INFO | Hello
+2018-09-28 00:00:54,722 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-09-28 00:00:54,723 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:00:54,724 | Models.Reading | MainThread   | __init__:8 || INFO | Init Reading
+2018-09-28 00:00:54,725 | Models.Reading | MainThread   | __str__:14 || INFO | Reading toString
+2018-09-28 00:00:54,726 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-09-28 00:00:54,727 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:00:54,730 | Models.WellReading | MainThread   | calculate_volume:21 || INFO | Calculating Volume
+2018-09-28 00:00:54,731 | Models.WellReading | MainThread   | __str__:33 || INFO | WellReading toString
+2018-09-28 00:00:54,737 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:01:15,013 | root | MainThread   | init_logging:12 || INFO | -------------------------------------------------------- |
+2018-09-28 00:01:15,013 | root | MainThread   | init_logging:13 || INFO | -------           New Logging session            ------- |
+2018-09-28 00:01:15,015 | root | MainThread   | init_logging:14 || INFO | -------------------------------------------------------- |
+2018-09-28 00:01:15,016 | __main__ | MainThread   | <module>:17 || INFO | Hello
+2018-09-28 00:01:15,017 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-09-28 00:01:15,018 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:01:15,021 | Models.Reading | MainThread   | __init__:8 || INFO | Init Reading
+2018-09-28 00:01:15,022 | Models.Reading | MainThread   | __str__:14 || INFO | Reading toString
+2018-09-28 00:01:15,029 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-09-28 00:01:15,030 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
+2018-09-28 00:01:15,032 | Models.WellReading | MainThread   | calculate_volume:21 || INFO | Calculating Volume
+2018-09-28 00:01:15,033 | Models.WellReading | MainThread   | __str__:33 || INFO | WellReading toString
+2018-09-28 00:01:15,033 | Models.Well | MainThread   | __str__:15 || INFO | printing a Well
