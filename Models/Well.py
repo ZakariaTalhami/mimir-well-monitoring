@@ -11,6 +11,14 @@ class Well:
         self.__area = area
         self.__height = height
 
+    def __repr__(self):
+        # logger.info("printing a Well")
+        wellstr = "Well {0}:".format(self.get_well_id())
+        wellstr += "\n\t water area = {0},".format(self.get_area())
+        wellstr += "\n\t Well Height = {0}.".format(self.get_height())
+        # logger.debug("\n" + wellstr)
+        return wellstr
+
     def __str__(self):
         logger.info("printing a Well")
         wellstr = "Well {0}:".format(self.get_well_id())
