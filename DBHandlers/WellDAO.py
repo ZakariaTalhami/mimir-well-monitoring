@@ -18,6 +18,7 @@ class WellDAO:
             param = (self.well.get_well_id(), self.well.get_area(), self.well.get_height())
             db_driver.insert(query, param)
         else:
+            logging.error("Wrong value type for Well")
             raise ValueError
 
     def read_all(self):
