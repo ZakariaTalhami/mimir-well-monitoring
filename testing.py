@@ -5,6 +5,7 @@ from random import Random
 
 from DBHandlers.DBDriver import DBDriver
 from DBHandlers.WellDAO import WellDAO
+from DBHandlers.WellReadingDAO import WellReadingDAO
 from Models.Well import Well
 from Models.Reading import Reading
 
@@ -21,19 +22,31 @@ def init_logging():
 
 
 init_logging()
+# create random Generator
 rand = Random()
 randint = rand.randint(0, 1000)
-logging.getLogger(__name__).info("Hello")
+
+# Testing Well And WellDAO
 well5 = Well(randint, round(rand.uniform(1, 10), 3), round(rand.uniform(1, 10), 3))
 well5DAo = WellDAO()
 well5DAo.save(well5)
 mylist = well5DAo.read_all()
 pprint.pprint(mylist)
 pprint.pprint(well5DAo.read_by_id(randint))
-well5.set_height(round(rand.uniform(1 , 10), 3))
-well5.set_area(round(rand.uniform(1 , 10) , 3))
+well5.set_height(round(rand.uniform(1, 10), 3))
+well5.set_area(round(rand.uniform(1, 10), 3))
 well5DAo.update(well5)
-well5DAo.delete(well5.get_well_id())
+# well5DAo.delete(well5.get_well_id())
+
+reading_id = rand.randint(0 , 1000)
+reading = WellReading(well5, round(rand.uniform(1, 30), 3), reading_id=reading_id)
+readingDAO = WellReadingDAO()
+readingDAO.save(reading)
+readingDAO.read_all()
+readingDAO.read_by_id(reading_id)
+reading.set_volume(25.0)
+readingDAO.update(reading)
+readingDAO.delete(reading_id)
 # well5DAo.save(well5)
 # reading5 = Reading(3, 25)
 # print(reading5)
