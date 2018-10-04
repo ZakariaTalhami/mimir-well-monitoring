@@ -3,9 +3,11 @@ import pprint
 import sqlite3
 from random import Random
 
+import Linker
 from DBHandlers.DBDriver import DBDriver
 from DBHandlers.WellDAO import WellDAO
 from DBHandlers.WellReadingDAO import WellReadingDAO
+from Linker.Linker import Linker
 from Models.Well import Well
 from Models.Reading import Reading
 
@@ -53,6 +55,9 @@ readingDAO.delete(reading_id)
 # wellReading = WellReading(well5 , 5)
 # print(wellReading)
 
+myLinker = Linker()
+meReading = Reading(24 , 25.363)
+myLinker.link_and_persist(meReading)
 
 # # main="first" , comesafter = "second"
 # db.create_table("hello", main="TEXT", comesafter="TEXT")

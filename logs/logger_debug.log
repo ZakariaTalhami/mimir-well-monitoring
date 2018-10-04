@@ -13239,3 +13239,2113 @@ Well 284:
 2018-10-01 00:47:49,664 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
 2018-10-01 00:47:49,664 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 849
 2018-10-01 00:47:49,669 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:46:59,570 | root | MainThread   | init_logging:20 || INFO | -------------------------------------------------------- |
+2018-10-03 11:46:59,578 | root | MainThread   | init_logging:21 || INFO | -------           New Logging session            ------- |
+2018-10-03 11:46:59,578 | root | MainThread   | init_logging:22 || INFO | -------------------------------------------------------- |
+2018-10-03 11:46:59,582 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,582 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,3.085,1.204)
+2018-10-03 11:46:59,582 | DBHandlers.WellDAO | MainThread   | save:13 || INFO | Saving Well to the database
+2018-10-03 11:46:59,582 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,582 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 632:
+	 water area = 3.085,
+	 Well Height = 1.204.
+2018-10-03 11:46:59,582 | DBHandlers.WellDAO | MainThread   | save:14 || DEBUG | saving: 
+Well 632:
+	 water area = 3.085,
+	 Well Height = 1.204.
+2018-10-03 11:46:59,582 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:46:59,582 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO Well( id , area , height)  VALUES(632 , 3.085 , 1.204)
+2018-10-03 11:46:59,582 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:46:59,689 | DBHandlers.WellDAO | MainThread   | read_all:25 || INFO | Reading all wells
+2018-10-03 11:46:59,689 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well
+2018-10-03 11:46:59,689 | DBHandlers.WellDAO | MainThread   | read_all:28 || DEBUG | Query result 
+[<sqlite3.Row object at 0x000002029600A8B0>, <sqlite3.Row object at 0x000002029600A930>, <sqlite3.Row object at 0x000002029600A970>, <sqlite3.Row object at 0x000002029600A950>, <sqlite3.Row object at 0x000002029600A910>, <sqlite3.Row object at 0x000002029600A8D0>, <sqlite3.Row object at 0x000002029600A990>, <sqlite3.Row object at 0x000002029600A9B0>, <sqlite3.Row object at 0x000002029600A9D0>, <sqlite3.Row object at 0x000002029600A9F0>, <sqlite3.Row object at 0x000002029600AA10>, <sqlite3.Row object at 0x000002029600AA30>, <sqlite3.Row object at 0x000002029600AA50>, <sqlite3.Row object at 0x000002029600AA70>, <sqlite3.Row object at 0x000002029600AA90>, <sqlite3.Row object at 0x000002029600AAB0>, <sqlite3.Row object at 0x000002029600AAD0>, <sqlite3.Row object at 0x000002029600AAF0>, <sqlite3.Row object at 0x000002029600AB10>, <sqlite3.Row object at 0x000002029600AB30>, <sqlite3.Row object at 0x000002029600AB50>, <sqlite3.Row object at 0x000002029600AB70>, <sqlite3.Row object at 0x000002029600AB90>, <sqlite3.Row object at 0x000002029600ABB0>, <sqlite3.Row object at 0x000002029600ABD0>, <sqlite3.Row object at 0x000002029600ABF0>, <sqlite3.Row object at 0x000002029600AC10>, <sqlite3.Row object at 0x000002029600AC30>, <sqlite3.Row object at 0x000002029600AC50>, <sqlite3.Row object at 0x000002029600AC70>, <sqlite3.Row object at 0x000002029600AC90>, <sqlite3.Row object at 0x000002029600ACB0>, <sqlite3.Row object at 0x000002029600ACF0>, <sqlite3.Row object at 0x000002029600AD30>, <sqlite3.Row object at 0x000002029600AD70>, <sqlite3.Row object at 0x000002029600ADB0>, <sqlite3.Row object at 0x000002029600ADF0>, <sqlite3.Row object at 0x000002029600AE30>, <sqlite3.Row object at 0x000002029600AE70>, <sqlite3.Row object at 0x000002029600AEB0>, <sqlite3.Row object at 0x000002029600AEF0>, <sqlite3.Row object at 0x000002029600AF30>, <sqlite3.Row object at 0x000002029600AF70>, <sqlite3.Row object at 0x000002029600AFB0>, <sqlite3.Row object at 0x0000020296039030>, <sqlite3.Row object at 0x0000020296039070>, <sqlite3.Row object at 0x00000202960390B0>, <sqlite3.Row object at 0x00000202960390F0>, <sqlite3.Row object at 0x0000020296039130>, <sqlite3.Row object at 0x0000020296039170>, <sqlite3.Row object at 0x00000202960391B0>, <sqlite3.Row object at 0x00000202960391F0>, <sqlite3.Row object at 0x0000020296039230>, <sqlite3.Row object at 0x0000020296039270>, <sqlite3.Row object at 0x00000202960392B0>, <sqlite3.Row object at 0x00000202960392F0>, <sqlite3.Row object at 0x0000020296039330>, <sqlite3.Row object at 0x0000020296039370>, <sqlite3.Row object at 0x00000202960393B0>, <sqlite3.Row object at 0x00000202960393F0>, <sqlite3.Row object at 0x0000020296039430>]
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(1,2.0,4.0)
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(3,2.0,4.0)
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,689 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(8,2.0,4.0)
+2018-10-03 11:46:59,693 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,693 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(13,2.0,4.0)
+2018-10-03 11:46:59,693 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,693 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(16,2.0,4.0)
+2018-10-03 11:46:59,693 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(28,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(30,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(52,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(53,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(61,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(65,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(72,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(78,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(83,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(87,2.0,4.0)
+2018-10-03 11:46:59,695 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(94,2.0,4.0)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(99,2.0,4.0)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(100,2.0,4.0)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(111,1.685,2.45)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(159,3.075,6.165)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(169,6.765,7.659)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(172,8.447,8.761)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:46:59,699 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(258,2.429,3.984)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(281,3.15,2.615)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(377,3.955,4.956)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,703 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(509,8.763,9.071)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,3.085,1.204)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(656,1.826648121843165,4.0)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(706,1.719,5.081)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(752,1.767,8.119)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(759,9.261,3.708)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(846,5.889,2.521)
+2018-10-03 11:46:59,707 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(916,5.449,4.379)
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(920,4.157,9.543)
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,711 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:46:59,715 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 632
+2018-10-03 11:46:59,715 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 632
+2018-10-03 11:46:59,715 | DBHandlers.WellDAO | MainThread   | read_by_id:39 || DEBUG | Result: <sqlite3.Row object at 0x000002029600A930>
+2018-10-03 11:46:59,715 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,715 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,3.085,1.204)
+2018-10-03 11:46:59,715 | DBHandlers.WellDAO | MainThread   | update:44 || INFO | Updating well with id = 632
+2018-10-03 11:46:59,715 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:46:59,715 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE Well SET area = 8.562 , height = 8.319 WHERE id = 632
+2018-10-03 11:46:59,719 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:46:59,817 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,817 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,817 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.
+2018-10-03 11:46:59,817 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.,25.456)
+2018-10-03 11:46:59,817 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-03 11:46:59,817 | DBHandlers.WellReadingDAO | MainThread   | save:14 || INFO | Saving Well Reading to the database
+2018-10-03 11:46:59,817 | Models.WellReading | MainThread   | __str__:26 || INFO | WellReading toString
+2018-10-03 11:46:59,817 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,817 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.
+2018-10-03 11:46:59,817 | Models.WellReading | MainThread   | __str__:29 || DEBUG | 
+Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.
+	 Volume = 217.954
+2018-10-03 11:46:59,817 | DBHandlers.WellReadingDAO | MainThread   | save:15 || DEBUG | saving: 
+Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.
+	 Volume = 217.954
+2018-10-03 11:46:59,817 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:46:59,817 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( id, well_id , level , volume)  VALUES(39 , 632 , 25.456 , 217.954)
+2018-10-03 11:46:59,821 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:46:59,908 | DBHandlers.WellReadingDAO | MainThread   | read_all:30 || INFO | Reading all Well Readings
+2018-10-03 11:46:59,908 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-10-03 11:46:59,908 | DBHandlers.WellReadingDAO | MainThread   | read_all:34 || DEBUG | Query result 
+[<sqlite3.Row object at 0x0000020295D23F50>, <sqlite3.Row object at 0x000002029600A910>, <sqlite3.Row object at 0x000002029600A950>, <sqlite3.Row object at 0x000002029600A990>, <sqlite3.Row object at 0x000002029600A9B0>, <sqlite3.Row object at 0x000002029600A970>, <sqlite3.Row object at 0x000002029600AA50>, <sqlite3.Row object at 0x000002029600AAB0>, <sqlite3.Row object at 0x000002029600AB10>, <sqlite3.Row object at 0x000002029600AB70>, <sqlite3.Row object at 0x000002029600AB90>, <sqlite3.Row object at 0x000002029600ABF0>, <sqlite3.Row object at 0x000002029600AC10>, <sqlite3.Row object at 0x000002029600AC30>, <sqlite3.Row object at 0x000002029600AC90>, <sqlite3.Row object at 0x000002029600ACB0>, <sqlite3.Row object at 0x000002029600AD70>, <sqlite3.Row object at 0x000002029600AE30>, <sqlite3.Row object at 0x000002029600AE70>, <sqlite3.Row object at 0x000002029600AEB0>, <sqlite3.Row object at 0x000002029600AF70>, <sqlite3.Row object at 0x0000020296039030>, <sqlite3.Row object at 0x00000202960390F0>, <sqlite3.Row object at 0x00000202960391B0>, <sqlite3.Row object at 0x0000020296039270>, <sqlite3.Row object at 0x00000202960392B0>, <sqlite3.Row object at 0x00000202960393B0>, <sqlite3.Row object at 0x00000202960394D0>]
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:46:59,908 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.
+2018-10-03 11:46:59,908 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.,26.816)
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:46:59,908 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.
+2018-10-03 11:46:59,908 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.,1.115)
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,908 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:46:59,912 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:46:59,912 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.,5.77)
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:46:59,912 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,912 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.
+2018-10-03 11:46:59,916 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.,3.759)
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:46:59,916 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.
+2018-10-03 11:46:59,916 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.,10.98)
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:46:59,916 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,916 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.
+2018-10-03 11:46:59,920 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.,16.751)
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:46:59,920 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.
+2018-10-03 11:46:59,920 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.,11.124)
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:46:59,920 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.
+2018-10-03 11:46:59,920 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.,3.864)
+2018-10-03 11:46:59,920 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:46:59,924 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.
+2018-10-03 11:46:59,924 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.,10.329)
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:46:59,924 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.
+2018-10-03 11:46:59,924 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.,11.628)
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:46:59,924 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,924 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.
+2018-10-03 11:46:59,928 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.,6.17)
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:46:59,928 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.
+2018-10-03 11:46:59,928 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.,1.213)
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:46:59,928 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.
+2018-10-03 11:46:59,928 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.,4.575)
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,928 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.,10.871)
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.,27.69)
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,932 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.
+2018-10-03 11:46:59,932 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.,29.644)
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.,18.009)
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.,17.29)
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.,22.293)
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,936 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.
+2018-10-03 11:46:59,936 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.,7.899)
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:46:59,940 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.
+2018-10-03 11:46:59,940 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.,18.908)
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:46:59,940 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.
+2018-10-03 11:46:59,940 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.,1.836)
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:46:59,940 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,940 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.
+2018-10-03 11:46:59,944 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.,8.785)
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,8.562,8.319)
+2018-10-03 11:46:59,944 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.
+2018-10-03 11:46:59,944 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 632:
+	 water area = 8.562,
+	 Well Height = 8.319.,25.456)
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:46:59,944 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.
+2018-10-03 11:46:59,944 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.,26.849)
+2018-10-03 11:46:59,944 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.,23.692)
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.,3.418)
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.
+2018-10-03 11:46:59,948 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.,14.462)
+2018-10-03 11:46:59,948 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:42 || INFO | Selecting Well Reading with id = 39
+2018-10-03 11:46:59,948 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id where WellReading.id = 39
+2018-10-03 11:46:59,948 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:47 || DEBUG | Result: <sqlite3.Row object at 0x0000020295D23F50>
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:46:59,948 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(39,632,25.456)
+2018-10-03 11:46:59,952 | DBHandlers.WellReadingDAO | MainThread   | update:53 || INFO | Updating reading with id = 39
+2018-10-03 11:46:59,952 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:46:59,952 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE WellReading SET well_id = 632 , level = 25.456, volume = 25.0  WHERE id = 39
+2018-10-03 11:46:59,956 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:00,147 | DBHandlers.WellReadingDAO | MainThread   | delete:67 || INFO | Deleting Reading with id = 39
+2018-10-03 11:47:00,147 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:00,147 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 39
+2018-10-03 11:47:00,151 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:15,809 | root | MainThread   | init_logging:21 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:15,809 | root | MainThread   | init_logging:22 || INFO | -------           New Logging session            ------- |
+2018-10-03 11:47:15,809 | root | MainThread   | init_logging:23 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:15,809 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,809 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,2.628,1.419)
+2018-10-03 11:47:15,809 | DBHandlers.WellDAO | MainThread   | save:13 || INFO | Saving Well to the database
+2018-10-03 11:47:15,813 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:15,813 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 332:
+	 water area = 2.628,
+	 Well Height = 1.419.
+2018-10-03 11:47:15,813 | DBHandlers.WellDAO | MainThread   | save:14 || DEBUG | saving: 
+Well 332:
+	 water area = 2.628,
+	 Well Height = 1.419.
+2018-10-03 11:47:15,813 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:15,813 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO Well( id , area , height)  VALUES(332 , 2.628 , 1.419)
+2018-10-03 11:47:15,813 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:15,922 | DBHandlers.WellDAO | MainThread   | read_all:25 || INFO | Reading all wells
+2018-10-03 11:47:15,922 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well
+2018-10-03 11:47:15,922 | DBHandlers.WellDAO | MainThread   | read_all:28 || DEBUG | Query result 
+[<sqlite3.Row object at 0x000001F09AF32970>, <sqlite3.Row object at 0x000001F09AF329F0>, <sqlite3.Row object at 0x000001F09AF32A30>, <sqlite3.Row object at 0x000001F09AF32A10>, <sqlite3.Row object at 0x000001F09AF329D0>, <sqlite3.Row object at 0x000001F09AF32990>, <sqlite3.Row object at 0x000001F09AF32A50>, <sqlite3.Row object at 0x000001F09AF32A70>, <sqlite3.Row object at 0x000001F09AF32A90>, <sqlite3.Row object at 0x000001F09AF32AB0>, <sqlite3.Row object at 0x000001F09AF32AD0>, <sqlite3.Row object at 0x000001F09AF32AF0>, <sqlite3.Row object at 0x000001F09AF32B10>, <sqlite3.Row object at 0x000001F09AF32B30>, <sqlite3.Row object at 0x000001F09AF32B50>, <sqlite3.Row object at 0x000001F09AF32B70>, <sqlite3.Row object at 0x000001F09AF32B90>, <sqlite3.Row object at 0x000001F09AF32BB0>, <sqlite3.Row object at 0x000001F09AF32BD0>, <sqlite3.Row object at 0x000001F09AF32BF0>, <sqlite3.Row object at 0x000001F09AF32C10>, <sqlite3.Row object at 0x000001F09AF32C30>, <sqlite3.Row object at 0x000001F09AF32C50>, <sqlite3.Row object at 0x000001F09AF32C70>, <sqlite3.Row object at 0x000001F09AF32C90>, <sqlite3.Row object at 0x000001F09AF32CB0>, <sqlite3.Row object at 0x000001F09AF32CD0>, <sqlite3.Row object at 0x000001F09AF32CF0>, <sqlite3.Row object at 0x000001F09AF32D10>, <sqlite3.Row object at 0x000001F09AF32D30>, <sqlite3.Row object at 0x000001F09AF32D50>, <sqlite3.Row object at 0x000001F09AF32D70>, <sqlite3.Row object at 0x000001F09AF32DB0>, <sqlite3.Row object at 0x000001F09AF32DF0>, <sqlite3.Row object at 0x000001F09AF32E30>, <sqlite3.Row object at 0x000001F09AF32E70>, <sqlite3.Row object at 0x000001F09AF32EB0>, <sqlite3.Row object at 0x000001F09AF32EF0>, <sqlite3.Row object at 0x000001F09AF32F30>, <sqlite3.Row object at 0x000001F09AF32F70>, <sqlite3.Row object at 0x000001F09AF32FB0>, <sqlite3.Row object at 0x000001F09AF50030>, <sqlite3.Row object at 0x000001F09AF50070>, <sqlite3.Row object at 0x000001F09AF500B0>, <sqlite3.Row object at 0x000001F09AF500F0>, <sqlite3.Row object at 0x000001F09AF50130>, <sqlite3.Row object at 0x000001F09AF50170>, <sqlite3.Row object at 0x000001F09AF501B0>, <sqlite3.Row object at 0x000001F09AF501F0>, <sqlite3.Row object at 0x000001F09AF50230>, <sqlite3.Row object at 0x000001F09AF50270>, <sqlite3.Row object at 0x000001F09AF502B0>, <sqlite3.Row object at 0x000001F09AF502F0>, <sqlite3.Row object at 0x000001F09AF50330>, <sqlite3.Row object at 0x000001F09AF50370>, <sqlite3.Row object at 0x000001F09AF503B0>, <sqlite3.Row object at 0x000001F09AF503F0>, <sqlite3.Row object at 0x000001F09AF50430>, <sqlite3.Row object at 0x000001F09AF50470>, <sqlite3.Row object at 0x000001F09AF504B0>, <sqlite3.Row object at 0x000001F09AF504F0>, <sqlite3.Row object at 0x000001F09AF50530>]
+2018-10-03 11:47:15,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(1,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(3,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(8,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(13,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(16,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(28,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(30,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(52,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(53,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(61,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(65,2.0,4.0)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:15,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(72,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(78,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(83,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(87,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(94,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(99,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(100,2.0,4.0)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(111,1.685,2.45)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(159,3.075,6.165)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(169,6.765,7.659)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:15,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(172,8.447,8.761)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(258,2.429,3.984)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(281,3.15,2.615)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,2.628,1.419)
+2018-10-03 11:47:15,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(377,3.955,4.956)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(509,8.763,9.071)
+2018-10-03 11:47:15,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,8.562,8.319)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(656,1.826648121843165,4.0)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(706,1.719,5.081)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(752,1.767,8.119)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(759,9.261,3.708)
+2018-10-03 11:47:15,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(846,5.889,2.521)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(916,5.449,4.379)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(920,4.157,9.543)
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:15,950 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 332
+2018-10-03 11:47:15,950 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 332
+2018-10-03 11:47:15,950 | DBHandlers.WellDAO | MainThread   | read_by_id:39 || DEBUG | Result: <sqlite3.Row object at 0x000001F09AF329F0>
+2018-10-03 11:47:15,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:15,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,2.628,1.419)
+2018-10-03 11:47:15,950 | DBHandlers.WellDAO | MainThread   | update:44 || INFO | Updating well with id = 332
+2018-10-03 11:47:15,950 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:15,950 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE Well SET area = 6.481 , height = 3.203 WHERE id = 332
+2018-10-03 11:47:15,955 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:16,061 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,061 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,061 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.
+2018-10-03 11:47:16,061 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.,24.095)
+2018-10-03 11:47:16,061 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-03 11:47:16,061 | DBHandlers.WellReadingDAO | MainThread   | save:14 || INFO | Saving Well Reading to the database
+2018-10-03 11:47:16,061 | Models.WellReading | MainThread   | __str__:26 || INFO | WellReading toString
+2018-10-03 11:47:16,061 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,061 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.
+2018-10-03 11:47:16,061 | Models.WellReading | MainThread   | __str__:29 || DEBUG | 
+Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.
+	 Volume = 156.16
+2018-10-03 11:47:16,061 | DBHandlers.WellReadingDAO | MainThread   | save:15 || DEBUG | saving: 
+Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.
+	 Volume = 156.16
+2018-10-03 11:47:16,061 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:16,061 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( id, well_id , level , volume)  VALUES(386 , 332 , 24.095 , 156.16)
+2018-10-03 11:47:16,065 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:16,173 | DBHandlers.WellReadingDAO | MainThread   | read_all:30 || INFO | Reading all Well Readings
+2018-10-03 11:47:16,173 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-10-03 11:47:16,173 | DBHandlers.WellReadingDAO | MainThread   | read_all:34 || DEBUG | Query result 
+[<sqlite3.Row object at 0x000001F09AF329F0>, <sqlite3.Row object at 0x000001F09AF32A50>, <sqlite3.Row object at 0x000001F09AF32A70>, <sqlite3.Row object at 0x000001F09AF32A90>, <sqlite3.Row object at 0x000001F09AF32AB0>, <sqlite3.Row object at 0x000001F09AF32990>, <sqlite3.Row object at 0x000001F09AF32B50>, <sqlite3.Row object at 0x000001F09AF32BB0>, <sqlite3.Row object at 0x000001F09AF32C10>, <sqlite3.Row object at 0x000001F09AF32C70>, <sqlite3.Row object at 0x000001F09AF32C90>, <sqlite3.Row object at 0x000001F09AF32CF0>, <sqlite3.Row object at 0x000001F09AF32D10>, <sqlite3.Row object at 0x000001F09AF32D30>, <sqlite3.Row object at 0x000001F09AF32DB0>, <sqlite3.Row object at 0x000001F09AF32DF0>, <sqlite3.Row object at 0x000001F09AF32EB0>, <sqlite3.Row object at 0x000001F09AF32F70>, <sqlite3.Row object at 0x000001F09AF32FB0>, <sqlite3.Row object at 0x000001F09AF50530>, <sqlite3.Row object at 0x000001F09AF500B0>, <sqlite3.Row object at 0x000001F09AF50170>, <sqlite3.Row object at 0x000001F09AF50230>, <sqlite3.Row object at 0x000001F09AF502F0>, <sqlite3.Row object at 0x000001F09AF50330>, <sqlite3.Row object at 0x000001F09AF50430>, <sqlite3.Row object at 0x000001F09AF50570>, <sqlite3.Row object at 0x000001F09AF505D0>]
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:16,173 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.
+2018-10-03 11:47:16,173 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.,26.816)
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:16,173 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,173 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.,1.115)
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.,5.77)
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.,3.759)
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.,10.98)
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.
+2018-10-03 11:47:16,177 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.,16.751)
+2018-10-03 11:47:16,177 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.,11.124)
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.,3.864)
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.,10.329)
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.,11.628)
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,181 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:16,181 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.,6.17)
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.,1.213)
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.,4.575)
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.,10.871)
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:16,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.,27.69)
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.,29.644)
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.,18.009)
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.,17.29)
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.
+2018-10-03 11:47:16,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.,22.293)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.,7.899)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.,18.908)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.,1.836)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.,8.785)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.,26.849)
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.
+2018-10-03 11:47:16,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.,23.692)
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,6.481,3.203)
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 332:
+	 water area = 6.481,
+	 Well Height = 3.203.,24.095)
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.,3.418)
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.
+2018-10-03 11:47:16,199 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.,14.462)
+2018-10-03 11:47:16,199 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:42 || INFO | Selecting Well Reading with id = 386
+2018-10-03 11:47:16,199 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id where WellReading.id = 386
+2018-10-03 11:47:16,199 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:47 || DEBUG | Result: <sqlite3.Row object at 0x000001F09AF32A10>
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:16,199 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(386,332,24.095)
+2018-10-03 11:47:16,203 | DBHandlers.WellReadingDAO | MainThread   | update:53 || INFO | Updating reading with id = 386
+2018-10-03 11:47:16,203 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:16,203 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE WellReading SET well_id = 332 , level = 24.095, volume = 25.0  WHERE id = 386
+2018-10-03 11:47:16,203 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:16,288 | DBHandlers.WellReadingDAO | MainThread   | delete:67 || INFO | Deleting Reading with id = 386
+2018-10-03 11:47:16,288 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:16,288 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 386
+2018-10-03 11:47:16,307 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:24,149 | root | MainThread   | init_logging:21 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:24,149 | root | MainThread   | init_logging:22 || INFO | -------           New Logging session            ------- |
+2018-10-03 11:47:24,149 | root | MainThread   | init_logging:23 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:24,149 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,149 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(831,9.017,8.807)
+2018-10-03 11:47:24,149 | DBHandlers.WellDAO | MainThread   | save:13 || INFO | Saving Well to the database
+2018-10-03 11:47:24,149 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,149 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 831:
+	 water area = 9.017,
+	 Well Height = 8.807.
+2018-10-03 11:47:24,149 | DBHandlers.WellDAO | MainThread   | save:14 || DEBUG | saving: 
+Well 831:
+	 water area = 9.017,
+	 Well Height = 8.807.
+2018-10-03 11:47:24,149 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:24,149 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO Well( id , area , height)  VALUES(831 , 9.017 , 8.807)
+2018-10-03 11:47:24,155 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:24,264 | DBHandlers.WellDAO | MainThread   | read_all:25 || INFO | Reading all wells
+2018-10-03 11:47:24,269 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well
+2018-10-03 11:47:24,269 | DBHandlers.WellDAO | MainThread   | read_all:28 || DEBUG | Query result 
+[<sqlite3.Row object at 0x0000024250BE6A70>, <sqlite3.Row object at 0x0000024250BE6AF0>, <sqlite3.Row object at 0x0000024250BE6B30>, <sqlite3.Row object at 0x0000024250BE6B10>, <sqlite3.Row object at 0x0000024250BE6AD0>, <sqlite3.Row object at 0x0000024250BE6A90>, <sqlite3.Row object at 0x0000024250BE6B50>, <sqlite3.Row object at 0x0000024250BE6B70>, <sqlite3.Row object at 0x0000024250BE6B90>, <sqlite3.Row object at 0x0000024250BE6BB0>, <sqlite3.Row object at 0x0000024250BE6BD0>, <sqlite3.Row object at 0x0000024250BE6BF0>, <sqlite3.Row object at 0x0000024250BE6C10>, <sqlite3.Row object at 0x0000024250BE6C30>, <sqlite3.Row object at 0x0000024250BE6C50>, <sqlite3.Row object at 0x0000024250BE6C70>, <sqlite3.Row object at 0x0000024250BE6C90>, <sqlite3.Row object at 0x0000024250BE6CB0>, <sqlite3.Row object at 0x0000024250BE6CD0>, <sqlite3.Row object at 0x0000024250BE6CF0>, <sqlite3.Row object at 0x0000024250BE6D10>, <sqlite3.Row object at 0x0000024250BE6D30>, <sqlite3.Row object at 0x0000024250BE6D50>, <sqlite3.Row object at 0x0000024250BE6D70>, <sqlite3.Row object at 0x0000024250BE6D90>, <sqlite3.Row object at 0x0000024250BE6DB0>, <sqlite3.Row object at 0x0000024250BE6DD0>, <sqlite3.Row object at 0x0000024250BE6DF0>, <sqlite3.Row object at 0x0000024250BE6E10>, <sqlite3.Row object at 0x0000024250BE6E30>, <sqlite3.Row object at 0x0000024250BE6E50>, <sqlite3.Row object at 0x0000024250BE6E70>, <sqlite3.Row object at 0x0000024250BE6EB0>, <sqlite3.Row object at 0x0000024250BE6EF0>, <sqlite3.Row object at 0x0000024250BE6F30>, <sqlite3.Row object at 0x0000024250BE6F70>, <sqlite3.Row object at 0x0000024250BE6FB0>, <sqlite3.Row object at 0x0000024250C24030>, <sqlite3.Row object at 0x0000024250C24070>, <sqlite3.Row object at 0x0000024250C240B0>, <sqlite3.Row object at 0x0000024250C240F0>, <sqlite3.Row object at 0x0000024250C24130>, <sqlite3.Row object at 0x0000024250C24170>, <sqlite3.Row object at 0x0000024250C241B0>, <sqlite3.Row object at 0x0000024250C241F0>, <sqlite3.Row object at 0x0000024250C24230>, <sqlite3.Row object at 0x0000024250C24270>, <sqlite3.Row object at 0x0000024250C242B0>, <sqlite3.Row object at 0x0000024250C242F0>, <sqlite3.Row object at 0x0000024250C24330>, <sqlite3.Row object at 0x0000024250C24370>, <sqlite3.Row object at 0x0000024250C243B0>, <sqlite3.Row object at 0x0000024250C243F0>, <sqlite3.Row object at 0x0000024250C24430>, <sqlite3.Row object at 0x0000024250C24470>, <sqlite3.Row object at 0x0000024250C244B0>, <sqlite3.Row object at 0x0000024250C244F0>, <sqlite3.Row object at 0x0000024250C24530>, <sqlite3.Row object at 0x0000024250C24570>, <sqlite3.Row object at 0x0000024250C245B0>, <sqlite3.Row object at 0x0000024250C245F0>, <sqlite3.Row object at 0x0000024250C24630>, <sqlite3.Row object at 0x0000024250C24670>]
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(1,2.0,4.0)
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(3,2.0,4.0)
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(8,2.0,4.0)
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(13,2.0,4.0)
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(16,2.0,4.0)
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,269 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(28,2.0,4.0)
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(30,2.0,4.0)
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(52,2.0,4.0)
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,277 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(53,2.0,4.0)
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(61,2.0,4.0)
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(65,2.0,4.0)
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(72,2.0,4.0)
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,281 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(78,2.0,4.0)
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(83,2.0,4.0)
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(87,2.0,4.0)
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:24,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(94,2.0,4.0)
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(99,2.0,4.0)
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(100,2.0,4.0)
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(111,1.685,2.45)
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(159,3.075,6.165)
+2018-10-03 11:47:24,289 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,294 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(169,6.765,7.659)
+2018-10-03 11:47:24,294 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,294 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(172,8.447,8.761)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(258,2.429,3.984)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(281,3.15,2.615)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,295 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,6.481,3.203)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(377,3.955,4.956)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(509,8.763,9.071)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,298 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,8.562,8.319)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(656,1.826648121843165,4.0)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(706,1.719,5.081)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(752,1.767,8.119)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(759,9.261,3.708)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(831,9.017,8.807)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(846,5.889,2.521)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(916,5.449,4.379)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(920,4.157,9.543)
+2018-10-03 11:47:24,302 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,307 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:24,307 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 831
+2018-10-03 11:47:24,307 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 831
+2018-10-03 11:47:24,307 | DBHandlers.WellDAO | MainThread   | read_by_id:39 || DEBUG | Result: <sqlite3.Row object at 0x0000024250BE6AF0>
+2018-10-03 11:47:24,311 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,311 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(831,9.017,8.807)
+2018-10-03 11:47:24,311 | DBHandlers.WellDAO | MainThread   | update:44 || INFO | Updating well with id = 831
+2018-10-03 11:47:24,311 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:24,311 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE Well SET area = 8.568 , height = 3.904 WHERE id = 831
+2018-10-03 11:47:24,314 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:24,415 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,415 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,415 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.
+2018-10-03 11:47:24,415 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.,19.17)
+2018-10-03 11:47:24,415 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-03 11:47:24,415 | DBHandlers.WellReadingDAO | MainThread   | save:14 || INFO | Saving Well Reading to the database
+2018-10-03 11:47:24,419 | Models.WellReading | MainThread   | __str__:26 || INFO | WellReading toString
+2018-10-03 11:47:24,419 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,419 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.
+2018-10-03 11:47:24,419 | Models.WellReading | MainThread   | __str__:29 || DEBUG | 
+Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.
+	 Volume = 164.249
+2018-10-03 11:47:24,419 | DBHandlers.WellReadingDAO | MainThread   | save:15 || DEBUG | saving: 
+Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.
+	 Volume = 164.249
+2018-10-03 11:47:24,419 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:24,419 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( id, well_id , level , volume)  VALUES(936 , 831 , 19.17 , 164.249)
+2018-10-03 11:47:24,423 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:24,543 | DBHandlers.WellReadingDAO | MainThread   | read_all:30 || INFO | Reading all Well Readings
+2018-10-03 11:47:24,543 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-10-03 11:47:24,547 | DBHandlers.WellReadingDAO | MainThread   | read_all:34 || DEBUG | Query result 
+[<sqlite3.Row object at 0x0000024250BE6AF0>, <sqlite3.Row object at 0x0000024250BE6B50>, <sqlite3.Row object at 0x0000024250BE6B70>, <sqlite3.Row object at 0x0000024250BE6B90>, <sqlite3.Row object at 0x0000024250BE6BB0>, <sqlite3.Row object at 0x0000024250BE6A90>, <sqlite3.Row object at 0x0000024250BE6C50>, <sqlite3.Row object at 0x0000024250BE6CB0>, <sqlite3.Row object at 0x0000024250BE6D10>, <sqlite3.Row object at 0x0000024250BE6D70>, <sqlite3.Row object at 0x0000024250BE6D90>, <sqlite3.Row object at 0x0000024250BE6DF0>, <sqlite3.Row object at 0x0000024250BE6E10>, <sqlite3.Row object at 0x0000024250BE6E30>, <sqlite3.Row object at 0x0000024250BE6EB0>, <sqlite3.Row object at 0x0000024250BE6EF0>, <sqlite3.Row object at 0x0000024250BE6FB0>, <sqlite3.Row object at 0x0000024250C24070>, <sqlite3.Row object at 0x0000024250C240B0>, <sqlite3.Row object at 0x0000024250C240F0>, <sqlite3.Row object at 0x0000024250C241B0>, <sqlite3.Row object at 0x0000024250C24270>, <sqlite3.Row object at 0x0000024250C24330>, <sqlite3.Row object at 0x0000024250C243F0>, <sqlite3.Row object at 0x0000024250C24430>, <sqlite3.Row object at 0x0000024250C24530>, <sqlite3.Row object at 0x0000024250C24630>, <sqlite3.Row object at 0x0000024250C246F0>]
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:24,547 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.
+2018-10-03 11:47:24,547 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.,26.816)
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,547 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:24,551 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.
+2018-10-03 11:47:24,551 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.,1.115)
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:24,551 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:24,551 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.,5.77)
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,551 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.,3.759)
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.,10.98)
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.,16.751)
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.,11.124)
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:24,555 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,555 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.,3.864)
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.,10.329)
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.,11.628)
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.,6.17)
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,559 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.
+2018-10-03 11:47:24,559 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.,1.213)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.,4.575)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.,10.871)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.,27.69)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.,29.644)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.,18.009)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.
+2018-10-03 11:47:24,563 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.,17.29)
+2018-10-03 11:47:24,563 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:24,569 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.
+2018-10-03 11:47:24,569 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.,22.293)
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:24,569 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,569 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.,7.899)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.,18.908)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.,1.836)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.,8.785)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.,26.849)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.
+2018-10-03 11:47:24,573 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.,23.692)
+2018-10-03 11:47:24,573 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.,3.418)
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.,14.462)
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(831,8.568,3.904)
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.
+2018-10-03 11:47:24,579 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 831:
+	 water area = 8.568,
+	 Well Height = 3.904.,19.17)
+2018-10-03 11:47:24,579 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:42 || INFO | Selecting Well Reading with id = 936
+2018-10-03 11:47:24,579 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id where WellReading.id = 936
+2018-10-03 11:47:24,579 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:47 || DEBUG | Result: <sqlite3.Row object at 0x0000024250BE6B10>
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:24,579 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(936,831,19.17)
+2018-10-03 11:47:24,579 | DBHandlers.WellReadingDAO | MainThread   | update:53 || INFO | Updating reading with id = 936
+2018-10-03 11:47:24,579 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:24,583 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE WellReading SET well_id = 831 , level = 19.17, volume = 25.0  WHERE id = 936
+2018-10-03 11:47:24,583 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:24,725 | DBHandlers.WellReadingDAO | MainThread   | delete:67 || INFO | Deleting Reading with id = 936
+2018-10-03 11:47:24,725 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:24,729 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 936
+2018-10-03 11:47:24,733 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:44,784 | root | MainThread   | init_logging:21 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:44,784 | root | MainThread   | init_logging:22 || INFO | -------           New Logging session            ------- |
+2018-10-03 11:47:44,784 | root | MainThread   | init_logging:23 || INFO | -------------------------------------------------------- |
+2018-10-03 11:47:44,789 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,789 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(323,5.386,1.227)
+2018-10-03 11:47:44,789 | DBHandlers.WellDAO | MainThread   | save:13 || INFO | Saving Well to the database
+2018-10-03 11:47:44,789 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:44,789 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 323:
+	 water area = 5.386,
+	 Well Height = 1.227.
+2018-10-03 11:47:44,789 | DBHandlers.WellDAO | MainThread   | save:14 || DEBUG | saving: 
+Well 323:
+	 water area = 5.386,
+	 Well Height = 1.227.
+2018-10-03 11:47:44,789 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:44,789 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO Well( id , area , height)  VALUES(323 , 5.386 , 1.227)
+2018-10-03 11:47:44,792 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:44,918 | DBHandlers.WellDAO | MainThread   | read_all:25 || INFO | Reading all wells
+2018-10-03 11:47:44,918 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well
+2018-10-03 11:47:44,918 | DBHandlers.WellDAO | MainThread   | read_all:28 || DEBUG | Query result 
+[<sqlite3.Row object at 0x00000179EC146A70>, <sqlite3.Row object at 0x00000179EC146AF0>, <sqlite3.Row object at 0x00000179EC146B30>, <sqlite3.Row object at 0x00000179EC146B10>, <sqlite3.Row object at 0x00000179EC146AD0>, <sqlite3.Row object at 0x00000179EC146A90>, <sqlite3.Row object at 0x00000179EC146B50>, <sqlite3.Row object at 0x00000179EC146B70>, <sqlite3.Row object at 0x00000179EC146B90>, <sqlite3.Row object at 0x00000179EC146BB0>, <sqlite3.Row object at 0x00000179EC146BD0>, <sqlite3.Row object at 0x00000179EC146BF0>, <sqlite3.Row object at 0x00000179EC146C10>, <sqlite3.Row object at 0x00000179EC146C30>, <sqlite3.Row object at 0x00000179EC146C50>, <sqlite3.Row object at 0x00000179EC146C70>, <sqlite3.Row object at 0x00000179EC146C90>, <sqlite3.Row object at 0x00000179EC146CB0>, <sqlite3.Row object at 0x00000179EC146CD0>, <sqlite3.Row object at 0x00000179EC146CF0>, <sqlite3.Row object at 0x00000179EC146D10>, <sqlite3.Row object at 0x00000179EC146D30>, <sqlite3.Row object at 0x00000179EC146D50>, <sqlite3.Row object at 0x00000179EC146D70>, <sqlite3.Row object at 0x00000179EC146D90>, <sqlite3.Row object at 0x00000179EC146DB0>, <sqlite3.Row object at 0x00000179EC146DD0>, <sqlite3.Row object at 0x00000179EC146DF0>, <sqlite3.Row object at 0x00000179EC146E10>, <sqlite3.Row object at 0x00000179EC146E30>, <sqlite3.Row object at 0x00000179EC146E50>, <sqlite3.Row object at 0x00000179EC146E70>, <sqlite3.Row object at 0x00000179EC146EB0>, <sqlite3.Row object at 0x00000179EC146EF0>, <sqlite3.Row object at 0x00000179EC146F30>, <sqlite3.Row object at 0x00000179EC146F70>, <sqlite3.Row object at 0x00000179EC146FB0>, <sqlite3.Row object at 0x00000179EC184030>, <sqlite3.Row object at 0x00000179EC184070>, <sqlite3.Row object at 0x00000179EC1840B0>, <sqlite3.Row object at 0x00000179EC1840F0>, <sqlite3.Row object at 0x00000179EC184130>, <sqlite3.Row object at 0x00000179EC184170>, <sqlite3.Row object at 0x00000179EC1841B0>, <sqlite3.Row object at 0x00000179EC1841F0>, <sqlite3.Row object at 0x00000179EC184230>, <sqlite3.Row object at 0x00000179EC184270>, <sqlite3.Row object at 0x00000179EC1842B0>, <sqlite3.Row object at 0x00000179EC1842F0>, <sqlite3.Row object at 0x00000179EC184330>, <sqlite3.Row object at 0x00000179EC184370>, <sqlite3.Row object at 0x00000179EC1843B0>, <sqlite3.Row object at 0x00000179EC1843F0>, <sqlite3.Row object at 0x00000179EC184430>, <sqlite3.Row object at 0x00000179EC184470>, <sqlite3.Row object at 0x00000179EC1844B0>, <sqlite3.Row object at 0x00000179EC1844F0>, <sqlite3.Row object at 0x00000179EC184530>, <sqlite3.Row object at 0x00000179EC184570>, <sqlite3.Row object at 0x00000179EC1845B0>, <sqlite3.Row object at 0x00000179EC1845F0>, <sqlite3.Row object at 0x00000179EC184630>, <sqlite3.Row object at 0x00000179EC184670>, <sqlite3.Row object at 0x00000179EC1846B0>]
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(1,2.0,4.0)
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(3,2.0,4.0)
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(8,2.0,4.0)
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(13,2.0,4.0)
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(16,2.0,4.0)
+2018-10-03 11:47:44,922 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(28,2.0,4.0)
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(30,2.0,4.0)
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(52,2.0,4.0)
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(53,2.0,4.0)
+2018-10-03 11:47:44,926 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(61,2.0,4.0)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(65,2.0,4.0)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(72,2.0,4.0)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(78,2.0,4.0)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(83,2.0,4.0)
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,930 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(87,2.0,4.0)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(94,2.0,4.0)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(99,2.0,4.0)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(100,2.0,4.0)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(111,1.685,2.45)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(159,3.075,6.165)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(169,6.765,7.659)
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,934 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(172,8.447,8.761)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(258,2.429,3.984)
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,938 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(281,3.15,2.615)
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(323,5.386,1.227)
+2018-10-03 11:47:44,942 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(332,6.481,3.203)
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(377,3.955,4.956)
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,946 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(509,8.763,9.071)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(632,8.562,8.319)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(656,1.826648121843165,4.0)
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,950 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(706,1.719,5.081)
+2018-10-03 11:47:44,954 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(752,1.767,8.119)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(759,9.261,3.708)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(831,8.568,3.904)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(846,5.889,2.521)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(916,5.449,4.379)
+2018-10-03 11:47:44,955 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,959 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(920,4.157,9.543)
+2018-10-03 11:47:44,959 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,959 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:44,959 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 323
+2018-10-03 11:47:44,959 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 323
+2018-10-03 11:47:44,963 | DBHandlers.WellDAO | MainThread   | read_by_id:39 || DEBUG | Result: <sqlite3.Row object at 0x00000179EC146AF0>
+2018-10-03 11:47:44,963 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:44,963 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(323,5.386,1.227)
+2018-10-03 11:47:44,963 | DBHandlers.WellDAO | MainThread   | update:44 || INFO | Updating well with id = 323
+2018-10-03 11:47:44,963 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:44,963 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE Well SET area = 8.25 , height = 9.78 WHERE id = 323
+2018-10-03 11:47:44,967 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:45,073 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,073 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,077 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.
+2018-10-03 11:47:45,077 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.,10.587)
+2018-10-03 11:47:45,077 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-03 11:47:45,077 | DBHandlers.WellReadingDAO | MainThread   | save:14 || INFO | Saving Well Reading to the database
+2018-10-03 11:47:45,077 | Models.WellReading | MainThread   | __str__:26 || INFO | WellReading toString
+2018-10-03 11:47:45,077 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,081 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.
+2018-10-03 11:47:45,081 | Models.WellReading | MainThread   | __str__:29 || DEBUG | 
+Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.
+	 Volume = 87.343
+2018-10-03 11:47:45,081 | DBHandlers.WellReadingDAO | MainThread   | save:15 || DEBUG | saving: 
+Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.
+	 Volume = 87.343
+2018-10-03 11:47:45,081 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-03 11:47:45,081 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( id, well_id , level , volume)  VALUES(986 , 323 , 10.587 , 87.343)
+2018-10-03 11:47:45,085 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-03 11:47:45,172 | DBHandlers.WellReadingDAO | MainThread   | read_all:30 || INFO | Reading all Well Readings
+2018-10-03 11:47:45,172 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-10-03 11:47:45,172 | DBHandlers.WellReadingDAO | MainThread   | read_all:34 || DEBUG | Query result 
+[<sqlite3.Row object at 0x00000179EC146AF0>, <sqlite3.Row object at 0x00000179EC146B50>, <sqlite3.Row object at 0x00000179EC146B70>, <sqlite3.Row object at 0x00000179EC146B90>, <sqlite3.Row object at 0x00000179EC146BB0>, <sqlite3.Row object at 0x00000179EC146A90>, <sqlite3.Row object at 0x00000179EC146C50>, <sqlite3.Row object at 0x00000179EC146CB0>, <sqlite3.Row object at 0x00000179EC146D10>, <sqlite3.Row object at 0x00000179EC146D70>, <sqlite3.Row object at 0x00000179EC146D90>, <sqlite3.Row object at 0x00000179EC146DF0>, <sqlite3.Row object at 0x00000179EC146E10>, <sqlite3.Row object at 0x00000179EC146E30>, <sqlite3.Row object at 0x00000179EC146EB0>, <sqlite3.Row object at 0x00000179EC146EF0>, <sqlite3.Row object at 0x00000179EC146FB0>, <sqlite3.Row object at 0x00000179EC184070>, <sqlite3.Row object at 0x00000179EC1840B0>, <sqlite3.Row object at 0x00000179EC1840F0>, <sqlite3.Row object at 0x00000179EC1841B0>, <sqlite3.Row object at 0x00000179EC184270>, <sqlite3.Row object at 0x00000179EC184330>, <sqlite3.Row object at 0x00000179EC1843F0>, <sqlite3.Row object at 0x00000179EC184430>, <sqlite3.Row object at 0x00000179EC184530>, <sqlite3.Row object at 0x00000179EC184630>, <sqlite3.Row object at 0x00000179EC184710>]
+2018-10-03 11:47:45,172 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,172 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(395,6.932,4.76)
+2018-10-03 11:47:45,172 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,172 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,172 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.
+2018-10-03 11:47:45,172 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 395:
+	 water area = 6.932,
+	 Well Height = 4.76.,26.816)
+2018-10-03 11:47:45,172 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(998,8.124,9.282)
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 998:
+	 water area = 8.124,
+	 Well Height = 9.282.,1.115)
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.,5.77)
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(233,5.518,2.516)
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 233:
+	 water area = 5.518,
+	 Well Height = 2.516.,3.759)
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(236,6.587,2.727)
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 236:
+	 water area = 6.587,
+	 Well Height = 2.727.,10.98)
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,176 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(739,7.144,4.335)
+2018-10-03 11:47:45,176 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 739:
+	 water area = 7.144,
+	 Well Height = 4.335.,16.751)
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(535,1.497,5.829)
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 535:
+	 water area = 1.497,
+	 Well Height = 5.829.,11.124)
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(630,1.451,2.544)
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 630:
+	 water area = 1.451,
+	 Well Height = 2.544.,3.864)
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(889,1.343,6.935)
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 889:
+	 water area = 1.343,
+	 Well Height = 6.935.,10.329)
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(324,7.041,8.084)
+2018-10-03 11:47:45,180 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,180 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,184 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.
+2018-10-03 11:47:45,184 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 324:
+	 water area = 7.041,
+	 Well Height = 8.084.,11.628)
+2018-10-03 11:47:45,184 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,184 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(74,4.046,5.762)
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 74:
+	 water area = 4.046,
+	 Well Height = 5.762.,6.17)
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(888,2.688,9.568)
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 888:
+	 water area = 2.688,
+	 Well Height = 9.568.,1.213)
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(170,3.966,6.198)
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 170:
+	 water area = 3.966,
+	 Well Height = 6.198.,4.575)
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(90,5.089,8.263)
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 90:
+	 water area = 5.089,
+	 Well Height = 8.263.,10.871)
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(538,5.511,5.834)
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,185 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.
+2018-10-03 11:47:45,185 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 538:
+	 water area = 5.511,
+	 Well Height = 5.834.,27.69)
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(235,7.38,4.189)
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 235:
+	 water area = 7.38,
+	 Well Height = 4.189.,29.644)
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(272,5.622,5.683)
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 272:
+	 water area = 5.622,
+	 Well Height = 5.683.,18.009)
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(866,8.496,7.688)
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 866:
+	 water area = 8.496,
+	 Well Height = 7.688.,17.29)
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(200,5.58,4.268)
+2018-10-03 11:47:45,189 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,189 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 200:
+	 water area = 5.58,
+	 Well Height = 4.268.,22.293)
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(234,4.081,5.996)
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 234:
+	 water area = 4.081,
+	 Well Height = 5.996.,7.899)
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(505,9.637,2.091)
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 505:
+	 water area = 9.637,
+	 Well Height = 2.091.,18.908)
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(294,9.125,5.28)
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 294:
+	 water area = 9.125,
+	 Well Height = 5.28.,1.836)
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(418,9.131,2.781)
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 418:
+	 water area = 9.131,
+	 Well Height = 2.781.,8.785)
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(334,5.576,3.333)
+2018-10-03 11:47:45,193 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,193 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 334:
+	 water area = 5.576,
+	 Well Height = 3.333.,26.849)
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(68,9.72,5.617)
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 68:
+	 water area = 9.72,
+	 Well Height = 5.617.,23.692)
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(363,4.311,2.598)
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 363:
+	 water area = 4.311,
+	 Well Height = 2.598.,3.418)
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(284,2.499,9.371)
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 284:
+	 water area = 2.499,
+	 Well Height = 9.371.,14.462)
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(323,8.25,9.78)
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,198 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.
+2018-10-03 11:47:45,198 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 323:
+	 water area = 8.25,
+	 Well Height = 9.78.,10.587)
+2018-10-03 11:47:45,202 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:42 || INFO | Selecting Well Reading with id = 986
+2018-10-03 11:47:45,202 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id where WellReading.id = 986
+2018-10-03 11:47:45,202 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:47 || DEBUG | Result: <sqlite3.Row object at 0x00000179EC146B10>
+2018-10-03 11:47:45,202 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,202 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(986,323,10.587)
+2018-10-03 11:47:45,202 | DBHandlers.WellReadingDAO | MainThread   | update:53 || INFO | Updating reading with id = 986
+2018-10-03 11:47:45,202 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:45,202 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE WellReading SET well_id = 323 , level = 10.587, volume = 25.0  WHERE id = 986
+2018-10-03 11:47:45,202 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:45,297 | DBHandlers.WellReadingDAO | MainThread   | delete:67 || INFO | Deleting Reading with id = 986
+2018-10-03 11:47:45,297 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-03 11:47:45,297 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 986
+2018-10-03 11:47:45,305 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-03 11:47:45,389 | Linker.Linker | MainThread   | __init__:15 || INFO | Init Linker
+2018-10-03 11:47:45,389 | FirebaseDriver.FirebaseDriver | MainThread   | __init__:8 || INFO | Init Cloud Connect
+2018-10-03 11:47:45,389 | Models.Reading | MainThread   | __init__:8 || INFO | Init Reading
+2018-10-03 11:47:45,389 | Models.Reading | MainThread   | __init__:9 || DEBUG | Init Reading( 24 ,25.363 )
+2018-10-03 11:47:45,389 | Linker.Linker | MainThread   | link_and_persist:22 || INFO | preparing to link and persist
+2018-10-03 11:47:45,389 | Linker.Linker | MainThread   | link_and_persist:23 || DEBUG | persisting:> 
+ <Models.Reading.Reading object at 0x00000179EC18C0F0>
+2018-10-03 11:47:45,389 | Models.Reading | MainThread   | __str__:14 || INFO | Reading toString
+2018-10-03 11:47:45,389 | Models.Reading | MainThread   | __str__:18 || DEBUG | 
+Reading:> 
+	 Well ID  = 24
+	 Raw data = 25.363
+
+2018-10-03 11:47:45,389 | Linker.Linker | MainThread   | convert_reading_to_well_reading:49 || DEBUG | Converting Reading:> 
+	 Well ID  = 24
+	 Raw data = 25.363
+
+2018-10-03 11:47:45,389 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 24
+2018-10-03 11:47:45,389 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 24
+2018-10-03 11:47:45,389 | DBHandlers.WellDAO | MainThread   | read_by_id:39 || DEBUG | Result: <sqlite3.Row object at 0x00000179EC146C70>
+2018-10-03 11:47:45,389 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-03 11:47:45,389 | Models.Well | MainThread   | __init__:9 || DEBUG | init well(24,3.713,8.06)
+2018-10-03 11:47:45,393 | Linker.Linker | MainThread   | convert_reading_to_well_reading:53 || DEBUG | Retrieved Well information
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __init__:11 || DEBUG | Init WellReading(Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.,25.363)
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __str__:26 || INFO | WellReading toString
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __str__:29 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+	 Volume = 94.173
+2018-10-03 11:47:45,393 | Linker.Linker | MainThread   | convert_reading_to_well_reading:55 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+	 Volume = 94.173
+2018-10-03 11:47:45,393 | Linker.Linker | MainThread   | link_and_persist:36 || DEBUG | Converted Well Readings:>
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __repr__:33 || INFO | WellReading toString
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-03 11:47:45,393 | Models.Well | MainThread   | __str__:27 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+2018-10-03 11:47:45,393 | Models.WellReading | MainThread   | __repr__:36 || DEBUG | 
+Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+	 Volume = 94.173
+2018-10-03 11:47:45,393 | Linker.Linker | MainThread   | link_and_persist:37 || DEBUG | 
+[Well 24:
+	 water area = 3.713,
+	 Well Height = 8.06.
+	 Volume = 94.173]

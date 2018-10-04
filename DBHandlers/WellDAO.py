@@ -34,6 +34,7 @@ class WellDAO:
     def read_by_id(self, select_id):
         logger.info("Selecting Well with id = {}".format(select_id))
         query = "SELECT * FROM {} WHERE id = {}".format(self.__tablename__, select_id)
+        # TODO Check the size result before indexing
         entry = db_driver.query(query)[0]
         logger.debug("Result: {}".format(entry))
         return Well(entry[0], entry[1], entry[2])
