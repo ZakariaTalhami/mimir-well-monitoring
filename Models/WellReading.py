@@ -23,10 +23,10 @@ class WellReading():
             self.__volume = valume
 
     def __str__(self):
-        logger.info("WellReading toString")
+        # logger.info("WellReading toString")
         reading = self.__well.__str__()
         reading += "\n\t Volume = {}".format(self.__volume)
-        logger.debug("\n" + reading)
+        # logger.debug("\n" + reading)
         return reading
 
     def __repr__(self):

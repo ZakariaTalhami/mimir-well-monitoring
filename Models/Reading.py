@@ -11,11 +11,11 @@ class Reading:
         self.__raw_data = raw_data
 
     def __str__(self):
-        logger.info("Reading toString")
+        # logger.info("Reading toString")
         reading = "Reading:> \n"
         reading += "\t Well ID  = {}\n".format(self.get_well_id())
         reading += "\t Raw data = {}\n".format(self.get_raw_data())
-        logger.debug("\n"+reading)
+        # logger.debug("\n"+reading)
         return reading
 
     def __repr__(self):
