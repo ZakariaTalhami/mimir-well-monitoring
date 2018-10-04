@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 
 class DataGenerator:
     """
-
+        A Data Generator class, that uses a count value to generate that amount of test data to be used
+        with test readings from wells specified in UUID List provided to the class
     """
 
     def __init__(self):
