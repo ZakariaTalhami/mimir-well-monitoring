@@ -7768,3 +7768,212 @@
 2018-10-04 12:00:19,462 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
 2018-10-04 12:00:19,462 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( well_id , level , volume)  VALUES( 24 , 25.363 , 94.173)
 2018-10-04 12:00:19,464 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-04 12:28:04,088 | root | MainThread   | init_logging:21 || INFO | -------------------------------------------------------- |
+2018-10-04 12:28:04,088 | root | MainThread   | init_logging:22 || INFO | -------           New Logging session            ------- |
+2018-10-04 12:28:04,090 | root | MainThread   | init_logging:23 || INFO | -------------------------------------------------------- |
+2018-10-04 12:28:04,090 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,090 | DBHandlers.WellDAO | MainThread   | save:13 || INFO | Saving Well to the database
+2018-10-04 12:28:04,091 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:04,091 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-04 12:28:04,092 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO Well( id , area , height)  VALUES(354 , 5.798 , 2.339)
+2018-10-04 12:28:04,095 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-04 12:28:04,104 | DBHandlers.WellDAO | MainThread   | read_all:25 || INFO | Reading all wells
+2018-10-04 12:28:04,106 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well
+2018-10-04 12:28:04,131 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,135 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,136 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,137 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,138 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,144 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,155 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,171 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,175 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,190 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,207 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,221 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,238 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,251 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,258 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,271 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,285 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,290 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,303 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,319 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,322 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,338 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,353 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,368 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,372 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,388 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,404 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,420 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,435 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,439 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,452 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,469 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,484 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,487 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,501 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,508 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,520 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,536 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,554 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,570 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,587 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,589 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,603 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,620 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,636 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,652 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,656 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,676 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,688 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,692 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,705 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,723 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,727 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,740 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,743 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,759 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,772 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,778 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,793 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,807 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,821 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,824 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,841 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,854 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,858 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,872 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,877 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,895 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,908 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:04,924 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:05,759 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 354
+2018-10-04 12:28:05,772 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 354
+2018-10-04 12:28:05,776 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:05,810 | DBHandlers.WellDAO | MainThread   | update:44 || INFO | Updating well with id = 354
+2018-10-04 12:28:05,810 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-04 12:28:05,823 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE Well SET area = 9.673 , height = 4.635 WHERE id = 354
+2018-10-04 12:28:05,830 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-04 12:28:05,855 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:05,856 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:05,878 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-04 12:28:05,891 | DBHandlers.WellReadingDAO | MainThread   | save:14 || INFO | Saving Well Reading to the database
+2018-10-04 12:28:05,892 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:05,913 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | BEGIN 
+2018-10-04 12:28:05,923 | DBHandlers.DBDriver | MainThread   | insert:37 || INFO | INSERT INTO WellReading( id, well_id , level , volume)  VALUES(510 , 354 , 9.688 , 93.712)
+2018-10-04 12:28:05,928 | DBHandlers.DBDriver | MainThread   | insert:38 || INFO | COMMIT
+2018-10-04 12:28:05,951 | DBHandlers.WellReadingDAO | MainThread   | read_all:30 || INFO | Reading all Well Readings
+2018-10-04 12:28:05,951 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-10-04 12:28:05,963 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:05,980 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:05,990 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,023 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,027 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,028 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,060 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,074 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,077 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,111 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,123 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,126 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,156 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,159 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,175 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,207 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,223 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,226 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,256 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,261 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,262 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,294 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,307 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,310 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,342 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,355 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,359 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,388 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,394 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,395 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,440 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,443 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,444 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,478 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,492 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,494 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,525 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,529 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,529 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,559 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,563 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,575 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,615 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,626 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,629 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,660 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,673 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,677 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,706 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,707 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,710 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,741 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,757 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,758 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,790 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,806 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,808 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,842 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,855 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,857 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,888 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,893 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,905 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,927 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,939 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,943 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:06,976 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:06,989 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:06,990 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,024 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,040 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,044 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,074 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,078 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,093 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,126 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,140 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,144 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,175 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,180 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,191 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,223 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,227 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,240 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,262 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,275 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,278 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,310 | DBHandlers.WellReadingDAO | MainThread   | read_by_id:42 || INFO | Selecting Well Reading with id = 510
+2018-10-04 12:28:07,310 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id where WellReading.id = 510
+2018-10-04 12:28:07,326 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,342 | DBHandlers.WellReadingDAO | MainThread   | update:53 || INFO | Updating reading with id = 510
+2018-10-04 12:28:07,355 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-04 12:28:07,359 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | UPDATE WellReading SET well_id = 354 , level = 9.688, volume = 25.0  WHERE id = 510
+2018-10-04 12:28:07,365 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-04 12:28:07,382 | DBHandlers.WellReadingDAO | MainThread   | delete:67 || INFO | Deleting Reading with id = 510
+2018-10-04 12:28:07,382 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | BEGIN 
+2018-10-04 12:28:07,388 | DBHandlers.DBDriver | MainThread   | update:53 || INFO | DELETE FROM WellReading WHERE id = 510
+2018-10-04 12:28:07,395 | DBHandlers.DBDriver | MainThread   | update:54 || INFO | COMMIT
+2018-10-04 12:28:07,412 | Linker.Linker | MainThread   | __init__:15 || INFO | Init Linker
+2018-10-04 12:28:07,413 | FirebaseDriver.FirebaseDriver | MainThread   | __init__:8 || INFO | Init Cloud Connect
+2018-10-04 12:28:07,424 | Models.Reading | MainThread   | __init__:8 || INFO | Init Reading
+2018-10-04 12:28:07,443 | Linker.Linker | MainThread   | link_and_persist:22 || INFO | preparing to link and persist
+2018-10-04 12:28:07,475 | DBHandlers.WellDAO | MainThread   | read_by_id:35 || INFO | Selecting Well with id = 24
+2018-10-04 12:28:07,478 | DBHandlers.DBDriver | MainThread   | query:41 || INFO | SELECT * FROM Well WHERE id = 24
+2018-10-04 12:28:07,491 | Models.Well | MainThread   | __init__:8 || INFO | Init Well
+2018-10-04 12:28:07,508 | Models.WellReading | MainThread   | __init__:10 || INFO | Init Well Reading
+2018-10-04 12:28:07,511 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,541 | Models.WellReading | MainThread   | calculate_volume:40 || INFO | Calculating Volume
+2018-10-04 12:28:07,545 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,579 | Models.Well | MainThread   | __str__:23 || INFO | printing a Well
+2018-10-04 12:28:07,613 | FirebaseDriver.FirebaseDriver | MainThread   | save_reading:26 || INFO | Saving Reading to Database
