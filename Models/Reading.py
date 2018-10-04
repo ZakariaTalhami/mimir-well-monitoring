@@ -18,6 +18,9 @@ class Reading:
         logger.debug("\n"+reading)
         return reading
 
+    def __repr__(self):
+        return self.__str__()
+
     def get_well_id(self):
         return self.__well_id
 
