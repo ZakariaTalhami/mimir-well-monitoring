@@ -23,4 +23,5 @@ class CloudConnect:
         return well_list
 
     def save_reading(self, reading):
+        logger.info("Saving Reading to Database")
         return True
