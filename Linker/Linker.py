@@ -20,7 +20,7 @@ class Linker:
 
     def link_and_persist(self, readings):
         logger.info("preparing to link and persist")
-        logger.debug("persisting:> \n {}".format(pformat(readings)))
+        logger.debug("linking and persisting:> \n {}".format(pformat(readings)))
         target_list = []
 
         # Convert Stage
