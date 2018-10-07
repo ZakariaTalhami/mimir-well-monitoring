@@ -8,16 +8,26 @@ logger = logging.getLogger(__name__)
 
 
 class WellReadingDAO:
+    """
+        DAO for WellReading objects, handles all the data access (CRUD) of the wellReading objects in the database
+    """
     __tablename__ = WellReading.__name__
 
     def save(self, reading):
+        """
+            Persist the wellReading instance to the database in the reading table
+        :param well: WellReading instance to be persisted
+        :return:
+        """
         logger.info("Saving Well Reading to the database")
         logger.debug("saving: \n{}".format(reading))
         if isinstance(reading, WellReading):
             self.reading = reading
             if reading.get_id():
-                query = "INSERT INTO {}( id, well_id , level , volume)  VALUES(? , ? , ? , ?)".format(self.__tablename__)
-                param = (self.reading.get_id(), self.reading.get_well().get_well_id(), self.reading.get_level(), self.reading.get_volume())
+                query = "INSERT INTO {}( id, well_id , level , volume)  VALUES(? , ? , ? , ?)".format(
+                    self.__tablename__)
+                param = (self.reading.get_id(), self.reading.get_well().get_well_id(), self.reading.get_level(),
+                         self.reading.get_volume())
             else:
                 query = "INSERT INTO {}( well_id , level , volume)  VALUES( ? , ? , ?)".format(self.__tablename__)
                 param = (self.reading.get_well().get_well_id(), self.reading.get_level(), self.reading.get_volume())
@@ -27,6 +37,10 @@ class WellReadingDAO:
             raise ValueError
 
     def read_all(self):
+        """
+            Read all the wellReadings from the database
+        :return: list of wellReadings
+        """
         logger.info("Reading all Well Readings")
         query = "SELECT * FROM {0} " \
                 "INNER JOIN {1} ON {0}.well_id = {1}.id".format(self.__tablename__, WellDAO.__tablename__)
@@ -39,6 +53,11 @@ class WellReadingDAO:
         return reading_list
 
     def read_by_id(self, select_id):
+        """
+            Reads from the database a wellReading by its id
+        :param select_id: UUID of the requested reading
+        :return: WellReadings instance
+        """
         logger.info("Selecting Well Reading with id = {}".format(select_id))
         query = "SELECT * FROM {0} " \
                 "INNER JOIN {1} ON {0}.well_id = {1}.id " \
@@ -47,8 +66,12 @@ class WellReadingDAO:
         logger.debug("Result: {}".format(entry))
         return Well(entry[0], entry[1], entry[2])
 
-    #
     def update(self, reading):
+        """
+            Update a wellReading instance from the reading table in the database
+        :param well: New WellReading instance to be updated
+        :return:
+        """
         if isinstance(reading, WellReading):
             logger.info("Updating reading with id = {}".format(reading.get_id()))
             query = "UPDATE {} SET well_id = {} ," \
@@ -64,6 +87,11 @@ class WellReadingDAO:
             raise ValueError
 
     def delete(self, reading_id):
+        """
+            Delete a WellReading specified by the passed wellReading id
+        :param well_id: ID of the wellReading to be deleted
+        :return:
+        """
         logger.info("Deleting Reading with id = {}".format(reading_id))
         query = "DELETE FROM {} WHERE id = {}".format(self.__tablename__, reading_id)
         db_driver.update(query)

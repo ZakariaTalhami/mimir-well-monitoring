@@ -11,14 +11,32 @@ logger = logging.getLogger(__name__)
 
 
 class Linker:
+    """
+        The linker class, links between Readings coming from the I2C module and the Well information stored in
+        the database.
+    """
     def __init__(self):
+        """
+            Construct the linker class, initiates the WellReadingDAO, WellDAO and the firebase cloud connection
+        """
         logger.info("Init Linker")
-        self.whatNow = ""
         self.__wellreadingdao = WellReadingDAO()
         self.__welldao = WellDAO()
         self.__firebase = CloudConnect()
 
     def link_and_persist(self, readings):
+        """
+            Links the readings with the well classes stored in the database, creating a WellReading object.
+            This object is then persisted to the forebase database in the cloud, if cloud persistence fails, the readings
+            are then persisted to the local database temporarily.
+
+            1. Check if passed reading is instance of Reading or a list of readings, raise ValueError if not.
+            2. Convert the Readings into WellReadings by linking them to well instances
+            3. Attempt to persist to the firebase database
+            4. if fails persist to the local database
+        :param readings: individual reading or a list of readings
+        :return:
+        """
         logger.info("preparing to link and persist")
         logger.debug("linking and persisting:> \n {}".format(pformat(readings)))
         target_list = []
@@ -43,6 +61,15 @@ class Linker:
                 self.__wellreadingdao.save(entry)
 
     def convert_reading_to_well_reading(self, reading):
+        """
+            Convert a reading instance to a WellReading instance
+
+            1. Read from database a well depending on the well_id in the reading instance
+            2. Construct WellReading by passing the well and water level from the reading instance
+        :param reading: a reading instance
+        :return: WellReading instance
+        :raises ValueError if the reading is not instance Reading class
+        """
         if not isinstance(reading, Reading):
             raise ValueError
 
