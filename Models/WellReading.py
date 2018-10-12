@@ -1,4 +1,5 @@
 import logging
+from datetime import datetime
 
 from Models import Well
 
@@ -10,7 +11,7 @@ class WellReading():
         Well Reading class takes the dimension from the well class and the water level measurement from
         the Reading class and calculates the volume
     """
-    def __init__(self, well, raw_data, reading_id=0, volume=0):
+    def __init__(self, well, raw_data, timestamp:datetime ,reading_id=0, volume=0):
         """
             Constructor of the Well Reading class, takes well class and water level measurement and calculates
             volume. Optionally, if a volume value is passed the volume calculation is passed.
@@ -26,7 +27,7 @@ class WellReading():
         :raises valueError if passed well is not of well class
         """
         logger.info("Init Well Reading")
-        logger.debug("Init WellReading({},{})".format(well, raw_data))
+        logger.debug("Init WellReading({},{} , {} )".format(well, raw_data, timestamp))
         if isinstance(well, Well.Well):
             self.__well = well
         else:
@@ -35,6 +36,7 @@ class WellReading():
             raise ValueError
         self.__level = raw_data
         self.__id = reading_id
+        self.__timestamp = timestamp
         if volume == 0:
             self.__volume = self.calculate_volume(raw_data)
         else:
@@ -44,6 +46,7 @@ class WellReading():
         # logger.info("WellReading toString")
         reading = self.__well.__str__()
         reading += "\n\t Volume = {}".format(self.__volume)
+        reading += "\n\t Timestamp = {}".format(self.__timestamp)
         # logger.debug("\n" + reading)
         return reading
 
@@ -51,6 +54,7 @@ class WellReading():
         # logger.info("WellReading toString")
         reading = self.__well.__str__()
         reading += "\n\t Volume = {}".format(self.__volume)
+        reading += "\n\t Timestamp = {}".format(self.__timestamp)
         # logger.debug("\n" + reading)
         return reading
 
@@ -109,3 +113,12 @@ class WellReading():
         :return: WellReading id
         """
         return self.__id
+
+    def get_timestamp(self):
+        return  self.__timestamp
+
+    def set_timestamp(self, timestanmp):
+        if isinstance(timestanmp, datetime):
+            self.__timestamp = timestanmp
+        else:
+            raise ValueError

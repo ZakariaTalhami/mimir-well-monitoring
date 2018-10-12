@@ -3,9 +3,11 @@ import logging
 import random
 import time
 
+from DBHandlers.WellDAO import WellDAO
+
 logger = logging.getLogger(__name__)
 
-
+# TODO Fix the saving to take the address of this folder so it doesnt save data in other locations when called
 class DataGenerator:
     """
         A Data Generator class, that uses a count value to generate that amount of test data to be used
@@ -65,7 +67,7 @@ class DataGenerator:
 
         # convert Data into code (Might be used with the arduino to test I2C)
         u = "String UUID[] = {\n"
-        r = "double readings[] = {\n"
+        r =  "double readings[] = {\n"
         for row in rows:
             one = str(row["UUID"])
             two = str(row["raw"])
@@ -82,13 +84,16 @@ class DataGenerator:
 
 
 if __name__ == "__main__":
-    UUID_list = [
-        "ALGFSD-WERTFD",
-        "BPFBDL-AFNALK",
-        "CDGDSK-SDKJNS",
-        "DDFSDK-OJIORG",
-        "EOWFDS-DSKNNK"
-    ]
+    well_dao = WellDAO()
+    well_list = well_dao.read_all()
+    UUID_list = [x.get_well_id() for x in well_list]
+    # UUID_list = [
+    #     "ALGFSD-WERTFD",
+    #     "BPFBDL-AFNALK",
+    #     "CDGDSK-SDKJNS",
+    #     "DDFSDK-OJIORG",
+    #     "EOWFDS-DSKNNK"
+    # ]
     gen = DataGenerator()
     gen.set_count(1000000)
     gen.set_uuid_list(UUID_list)

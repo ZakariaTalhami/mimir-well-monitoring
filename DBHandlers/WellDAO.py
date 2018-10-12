@@ -5,7 +5,7 @@ from Models.Well import Well
 
 logger = logging.getLogger(__name__)
 
-
+# TODO  add a method to get  all the WELL IDS as a list
 class WellDAO:
     """
         DAO for Well objects, handles all the data access (CRUD) of the well objects in the database

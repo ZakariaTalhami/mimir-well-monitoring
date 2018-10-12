@@ -1,4 +1,5 @@
 import logging
+from datetime import date, datetime
 
 logger = logging.getLogger(__name__)
 
@@ -8,22 +9,25 @@ class Reading:
         This is a Raw Reading class that is produced from the I2C module, it contains
         the ID of the well and the measured water level
     """
-    def __init__(self, well_id, raw_data):
+    def __init__(self, well_id, raw_data , timestamp:datetime):
         """
             Constructor for Reading Class, where it takes the Well id and water level as the raw_data
         :param well_id:  UUID of the measured well
         :param raw_data: The measured water level
+        :param timestamp: Timestamp of the reading
         """
         logger.info("Init Reading")
-        logger.debug("Init Reading( {} ,{} )".format(well_id, raw_data))
+        logger.debug("Init Reading( {}, {}, {})".format(well_id, raw_data, timestamp))
         self.__well_id = well_id
         self.__raw_data = raw_data
+        self.__timestamp = timestamp
 
     def __str__(self):
         # logger.info("Reading toString")
         reading = "Reading:> \n"
         reading += "\t Well ID  = {}\n".format(self.get_well_id())
         reading += "\t Raw data = {}\n".format(self.get_raw_data())
+        reading += "\t Time = {}\n".format(self.get_raw_data())
         # logger.debug("\n"+reading)
         return reading
 
@@ -70,3 +74,11 @@ class Reading:
             logger.debug("{} is an invalid raw data ".format(raw_data))
             raise ValueError
 
+    def get_timestamp(self):
+        return  self.__timestamp
+
+    def set_timestamp(self, timestanmp):
+        if isinstance(timestanmp, datetime):
+            self.__timestamp = timestanmp
+        else:
+            raise ValueError

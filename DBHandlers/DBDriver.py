@@ -87,6 +87,7 @@ class DBDriver:
                           well_id="INTEGER",
                           level="REAL",
                           volume="REAL",
+                          time="TIMESTAMP",
                           FOREIGN="KEY(well_id) REFERENCES Well(id)")
 
 

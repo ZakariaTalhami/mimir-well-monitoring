@@ -24,13 +24,16 @@ class WellReadingDAO:
         if isinstance(reading, WellReading):
             self.reading = reading
             if reading.get_id():
-                query = "INSERT INTO {}( id, well_id , level , volume)  VALUES(? , ? , ? , ?)".format(
+                query = "INSERT INTO {}( id, well_id , level , volume, time)  VALUES(? , ? , ? , ? , ?)".format(
                     self.__tablename__)
                 param = (self.reading.get_id(), self.reading.get_well().get_well_id(), self.reading.get_level(),
-                         self.reading.get_volume())
+                         self.reading.get_volume(),
+                         self.reading.get_timestamp())
             else:
-                query = "INSERT INTO {}( well_id , level , volume)  VALUES( ? , ? , ?)".format(self.__tablename__)
-                param = (self.reading.get_well().get_well_id(), self.reading.get_level(), self.reading.get_volume())
+                query = "INSERT INTO {}( well_id , level , volume , time)  VALUES( ? , ? , ? , ?)".format(
+                    self.__tablename__)
+                param = (self.reading.get_well().get_well_id(), self.reading.get_level(), self.reading.get_volume(),
+                         self.reading.get_timestamp())
 
             db_driver.insert(query, param)
         else:
@@ -49,7 +52,7 @@ class WellReadingDAO:
         reading_list = []
         for entry in result:
             well = Well(entry["well_id"], entry["area"], entry["height"])
-            reading_list.append(WellReading(well, entry["level"], entry["id"], entry["volume"]))
+            reading_list.append(WellReading(well, entry["level"], entry["time"], entry["id"], entry["volume"]))
         return reading_list
 
     def read_by_id(self, select_id):
@@ -64,7 +67,8 @@ class WellReadingDAO:
                 "where {0}.id = {2}".format(self.__tablename__, WellDAO.__tablename__, select_id)
         entry = db_driver.query(query)[0]
         logger.debug("Result: {}".format(entry))
-        return Well(entry[0], entry[1], entry[2])
+        well = Well(entry["well_id"], entry["area"], entry["height"])
+        return WellReading(well, entry["level"], entry["time"], entry["id"], entry["volume"])
 
     def update(self, reading):
         """

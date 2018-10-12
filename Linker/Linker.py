@@ -78,7 +78,7 @@ class Linker:
         well_uuid = reading.get_well_id()  # What happens if the UUID is not found in the DB
         source_well = self.__welldao.read_by_id(well_uuid)
         logger.debug("Retrieved Well information")
-        target = WellReading(source_well, reading.get_raw_data())
+        target = WellReading(source_well, reading.get_raw_data(), reading.get_timestamp())
         logger.debug("\n{}".format(target))
 
         return target
