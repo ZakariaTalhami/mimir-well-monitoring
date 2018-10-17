@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "606457656237",
+    "firebase_url": "https://waterlevelmonitoringsyst-3ca70.firebaseio.com",
+    "project_id": "waterlevelmonitoringsyst-3ca70",
+    "storage_bucket": "waterlevelmonitoringsyst-3ca70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606457656237:android:368d43d46360e4cb",
+        "android_client_info": {
+          "package_name": "com.example.abdallah.waterlevelmonitoringsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606457656237-8v2jeprlh3jsfs83plibaeupghlp0m7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdallah.waterlevelmonitoringsystem",
+            "certificate_hash": "647cebf90ed1685b29e713a58a666b3550d9776f"
+          }
+        },
+        {
+          "client_id": "606457656237-iit9cjsfm3iu5tghgj0e3ivfnoqdc6g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK8LF4ITdMos0MQ2sN2Glf5eS3pXpRMb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606457656237-iit9cjsfm3iu5tghgj0e3ivfnoqdc6g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -29,10 +29,10 @@ class TestNoI2C:
     def run(self):
         try:
             with open(self.__file, "r") as infile:
-                fieldnames = ["UUID", "raw", "timestamp"]
+                fieldnames = ["UUID", "raw"]
                 reader = csv.DictReader(infile, fieldnames)
                 for row in reader:
-                    reading = Reading(int(row["UUID"]), float(row["raw"]) , row["timestamp"])
+                    reading = Reading(int(row["UUID"]), float(row["raw"]))
                     ret = self.__linker.link_and_persist(reading)
                     # assert ret == True
         except FileNotFoundError:
