@@ -2,6 +2,7 @@ import csv
 import logging
 import random
 import time
+from datetime import time, datetime
 
 from DBHandlers.WellDAO import WellDAO
 
@@ -56,11 +57,11 @@ class DataGenerator:
         UUIDs = self.__uuid_list
         # Construct a list of reading data
         for i in range(self.__count):
-            rows.append(dict(UUID=UUIDs[rand.randint(0, len(UUIDs) - 1)], raw=round(rand.uniform(2, 200), 3)))
+            rows.append(dict(UUID=UUIDs[rand.randint(0, len(UUIDs) - 1)], raw=round(rand.uniform(2, 200), 3), timestamp=datetime.now()))
 
         # Convert the Testing data to csv
         with open("test.csv", "w", newline='') as csvfile:
-            fieldnames = ['UUID', 'raw']
+            fieldnames = ['UUID', 'raw', 'timestamp']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             for row in rows:
                 writer.writerow(row)
