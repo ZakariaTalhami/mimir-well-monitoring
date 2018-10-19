@@ -11,7 +11,7 @@ class WellReading():
         Well Reading class takes the dimension from the well class and the water level measurement from
         the Reading class and calculates the volume
     """
-    def __init__(self, well, raw_data, timestamp:datetime ,reading_id=0, volume=0):
+    def __init__(self, well, raw_data, timestamp ,reading_id=0, volume=0):
         """
             Constructor of the Well Reading class, takes well class and water level measurement and calculates
             volume. Optionally, if a volume value is passed the volume calculation is passed.
