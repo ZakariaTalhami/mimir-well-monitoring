@@ -69,21 +69,21 @@ randint = rand.randint(0, 1000)
 # # db.insert_data("hello", main="TEXT", comesafter=
 
 
-# well_dao = WellDAO()
-# well_list = well_dao.read_all()
-# UUID_list = [x.get_well_id() for x in well_list]
-# gen = DataGenerator()
-# gen.set_count(10)
-# gen.set_uuid_list(UUID_list)
-# start = time.time()
-# gen.generator()
-# end = time.time()
+well_dao = WellDAO()
+well_list = well_dao.read_all()
+UUID_list = [x.get_well_id() for x in well_list]
+gen = DataGenerator()
+gen.set_count(1000)
+gen.set_uuid_list(UUID_list)
+start = time.time()
+gen.generator()
+end = time.time()
 # #
 tester = TestNoI2C(5 , "test.csv")
 tester.run()
 
 
-wellDao = WellDAO()
+# wellDao = WellDAO()
 # wells = wellDao.read_all()
 # con = CloudConnect(u"waterlevelmonitoringsyst-3ca70")
 # for well in wells:
