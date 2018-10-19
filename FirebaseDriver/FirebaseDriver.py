@@ -52,7 +52,7 @@ class CloudConnect:
     def save_reading(self, wellReading):
         logger.info("Saving Reading to Database")
         well_ref = self.db.collection("Well-Nodes").document("Well_{}".format(wellReading.get_well().get_well_id()))
-        well_ref.collection('Readings').set(
+        well_ref.collection('Readings').add(
             {
                 "Level": wellReading.get_level(),
                 "Volume": wellReading.get_volume(),
