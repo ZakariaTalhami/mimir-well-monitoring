@@ -1,6 +1,8 @@
 import csv
 import logging
+import os
 import random
+from pathlib import *
 import time
 from datetime import time, datetime
 
@@ -51,21 +53,25 @@ class DataGenerator:
 
         :return:
         """
+        save_path = Path(__file__).parent
         # Get Random generator
         rand = random
         rows = []
         UUIDs = self.__uuid_list
         # Construct a list of reading data
+        logger.info("Constructing {} Testing data".format(self.__count))
         for i in range(self.__count):
             rows.append(dict(UUID=UUIDs[rand.randint(0, len(UUIDs) - 1)], raw=round(rand.uniform(2, 200), 3), timestamp=datetime.now()))
 
         # Convert the Testing data to csv
-        with open("test.csv", "w", newline='') as csvfile:
+        logger.info("Writing testing data to a csv file")
+        with open(save_path / "test.csv", "w", newline='') as csvfile:
             fieldnames = ['UUID', 'raw', 'timestamp']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             for row in rows:
                 writer.writerow(row)
 
+        logger.info("Writing testing data in as array codes")
         # convert Data into code (Might be used with the arduino to test I2C)
         u = "String UUID[] = {\n"
         r =  "double readings[] = {\n"
@@ -78,7 +84,7 @@ class DataGenerator:
         r += "}"
 
         # Save Generated Code to text file
-        with open("array.txt", "w") as outfile:
+        with open(save_path / "array.txt", "w") as outfile:
             outfile.write(u)
             outfile.write("\n\n")
             outfile.write(r)
