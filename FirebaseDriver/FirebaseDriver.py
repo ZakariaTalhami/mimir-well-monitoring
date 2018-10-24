@@ -10,8 +10,9 @@ from DBHandlers.WellDAO import WellDAO
 import os
 
 from Models.Well import Well
+from pathlib import Path
 
-path = os.path.dirname(__file__)
+path = Path(__file__).parent
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +28,7 @@ class CloudConnect:
         """
         logger.info("Init Cloud Connection")
         cred = credentials.Certificate(
-            "{}\waterlevelmonitoringsyst-3ca70-firebase-adminsdk-u40sf-09a38a7e8f.json".format(path))
+            str(path / "waterlevelmonitoringsyst-3ca70-firebase-adminsdk-u40sf-09a38a7e8f.json"))
         firebase_admin.initialize_app(cred, {
             'projectId': u"waterlevelmonitoringsyst-3ca70",
         })

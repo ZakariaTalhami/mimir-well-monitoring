@@ -65,7 +65,7 @@ class DataGenerator:
 
         # Convert the Testing data to csv
         logger.info("Writing testing data to a csv file")
-        with open(save_path / "test.csv", "w", newline='') as csvfile:
+        with open(str(save_path / "test.csv"), "w", newline='') as csvfile:
             fieldnames = ['UUID', 'raw', 'timestamp']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             for row in rows:
@@ -84,7 +84,7 @@ class DataGenerator:
         r += "}"
 
         # Save Generated Code to text file
-        with open(save_path / "array.txt", "w") as outfile:
+        with open(str(save_path / "array.txt"), "w") as outfile:
             outfile.write(u)
             outfile.write("\n\n")
             outfile.write(r)

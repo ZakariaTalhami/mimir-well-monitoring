@@ -20,7 +20,7 @@ class TestNoI2C:
 
     def __init__(self, delay, file):
         logger.info("Init Test_no_i2c")
-        self.__file = Path(__file__).parent / file
+        self.__file = str(Path(__file__).parent / file)
         if isinstance(delay, int):
             self.__minDelay = int(0.8 * delay)
             self.__maxDelay = int(1.2 * delay)

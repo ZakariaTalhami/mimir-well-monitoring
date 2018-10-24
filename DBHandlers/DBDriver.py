@@ -19,8 +19,8 @@ class DBDriver:
         self.__conn.row_factory = sqlite3.Row
         self.__conn.set_trace_callback(logger.info)
         self.__cursor = self.__conn.cursor()
-        self.maintain_well_table()
-        self.maintain_reading_table()
+        #self.maintain_well_table()
+        #self.maintain_reading_table()
 
     def __del__(self):
         self.close_connection()
