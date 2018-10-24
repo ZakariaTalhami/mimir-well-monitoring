@@ -16,7 +16,7 @@ class Well:
 
     def __repr__(self):
         # logger.info("printing a Well")
-        wellstr = "Well {0}:".format(self.get_well_id())
+        wellstr = "\nWell {0}:".format(self.get_well_id())
         wellstr += "\n\t water area = {0},".format(self.get_area())
         wellstr += "\n\t Well Height = {0}.".format(self.get_height())
         # logger.debug("\n" + wellstr)
@@ -24,11 +24,21 @@ class Well:
 
     def __str__(self):
         # logger.info("printing a Well")
-        wellstr = "Well {0}:".format(self.get_well_id())
+        wellstr = "\nWell {0}:".format(self.get_well_id())
         wellstr += "\n\t water area = {0},".format(self.get_area())
         wellstr += "\n\t Well Height = {0}.".format(self.get_height())
         # logger.debug("\n" + wellstr)
         return wellstr
+
+    def to_dict(self):
+        """
+            Return the object as a Dictionary excluding the well_id variable
+        :return: Class instance as Dict
+        """
+        return {
+            'Area': self.__area,
+            'Height': self.__height
+        }
 
     def get_well_id(self):
         """

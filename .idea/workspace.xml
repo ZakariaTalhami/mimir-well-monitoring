@@ -4,7 +4,17 @@
     <bookmark url="file://$USER_HOME$/Documents/Personal/CigarML/assignment.py" line="69" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e259c32-1440-42f1-89d4-ac722e968ae8" name="Default Changelist" comment="" />
+    <list default="true" id="2e259c32-1440-42f1-89d4-ac722e968ae8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Well.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Well.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/WellReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/WellReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/array.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/array.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logger_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logger_debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logger_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logger_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +23,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mimir_well_monitoring$FirebaseDriver.coverage" NAME="FirebaseDriver Coverage Results" MODIFIED="1539805406050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FirebaseDriver" />
+    <SUITE FILE_PATH="coverage/mimir_well_monitoring$FirebaseDriver.coverage" NAME="FirebaseDriver Coverage Results" MODIFIED="1540117066214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FirebaseDriver" />
     <SUITE FILE_PATH="coverage/mimir_well_monitoring$assignment.coverage" NAME="assignment Coverage Results" MODIFIED="1538760440460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/Personal/CigarML" />
     <SUITE FILE_PATH="coverage/mimir_well_monitoring$part_2.coverage" NAME="part 2 Coverage Results" MODIFIED="1538910561263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/Personal/CigarML" />
-    <SUITE FILE_PATH="coverage/mimir_well_monitoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1539982653729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mimir_well_monitoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1540123447427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mimir_well_monitoring$new2.coverage" NAME="new2 Coverage Results" MODIFIED="1538935900475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/Personal/CigarML" />
     <SUITE FILE_PATH="coverage/mimir_well_monitoring$sci.coverage" NAME="sci Coverage Results" MODIFIED="1538643497077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/mimir_well_monitoring$dir_testing.coverage" NAME="dir_testing Coverage Results" MODIFIED="1539523258276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents" />
@@ -77,10 +87,10 @@
           <entry key="conf" value="1" />
           <entry key="csv" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="log" value="3" />
-          <entry key="py" value="91" />
+          <entry key="log" value="4" />
+          <entry key="py" value="98" />
           <entry key="sql" value="4" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
           <entry key="well" value="1" />
           <entry key="wellreading" value="2" />
         </counts>
@@ -89,24 +99,24 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Database Element" value="3" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="91" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="98" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="263" />
+          <entry key="Python Console" value="322" />
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="7" />
-          <entry key="py" value="17845" />
+          <entry key="py" value="19877" />
           <entry key="sql" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="18108" />
+          <entry key="Python" value="20199" />
           <entry key="SQL" value="15" />
           <entry key="Scratch" value="13" />
         </counts>
@@ -114,6 +124,59 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/Well.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <marker date="1540121731520" expanded="true" signature="1227:1329" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-691">
+              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1540123445721" expanded="true" signature="2612:2803" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,7 +200,6 @@
         <option value="$PROJECT_DIR$/Test/.pytest_cache/Test.py" />
         <option value="$PROJECT_DIR$/Test/echo.py" />
         <option value="$PROJECT_DIR$/Test/Test.py" />
-        <option value="$PROJECT_DIR$/Models/Well.py" />
         <option value="$USER_HOME$/Desktop/testme.py" />
         <option value="$USER_HOME$/Documents/Personal/CigarML/part 2.py" />
         <option value="$USER_HOME$/Documents/Personal/CigarML/assignment.py" />
@@ -152,12 +214,13 @@
         <option value="$PROJECT_DIR$/DBHandlers/__init__.py" />
         <option value="$PROJECT_DIR$/FirebaseDriver/__init__.py" />
         <option value="$PROJECT_DIR$/Models/__init__.py" />
-        <option value="$PROJECT_DIR$/Models/WellReading.py" />
         <option value="$PROJECT_DIR$/Test/TestDataGenerator.py" />
         <option value="$PROJECT_DIR$/Test/Test_no_i2c.py" />
-        <option value="$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py" />
-        <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Models/Well.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/Models/WellReading.py" />
+        <option value="$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py" />
       </list>
     </option>
   </component>
@@ -184,17 +247,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="mimir-well-monitoring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mimir-well-monitoring" type="462c0819:PsiDirectoryNode" />
-              <item name="DBHandlers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
@@ -221,15 +280,10 @@
               <item name="mimir-well-monitoring" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,8 +517,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18657719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32867134" />
@@ -479,9 +534,9 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" side_tool="true" visible="true" weight="0.32996207" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.2250316" />
-      <window_info anchor="bottom" id="Python Console" order="14" visible="true" weight="0.32743362" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32743362" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -568,21 +623,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Test.py" />
-    <entry file="file://$PROJECT_DIR$/Test/array.txt">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="474">
-          <caret line="64000" column="4" lean-forward="true" selection-start-line="64000" selection-start-column="4" selection-end-line="64000" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/logger_debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="18857" lean-forward="true" selection-start-line="18857" selection-end-line="18857" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Personal/CigarML/assignment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -676,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Linker/Linker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="70" column="57" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+        <state relative-caret-position="473">
+          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -701,67 +741,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/test.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-18972">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-        </state>
-      </provider>
       <provider editor-type-id="LargeFileEditor">
         <state relative-caret-position="119">
           <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-18972">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Test_no_i2c.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="42" />
-          <folding>
-            <element signature="e#204#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Well.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/TestDataGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,6 +762,90 @@
           <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/firebase_admin/firestore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/logger_debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="64350" column="129" lean-forward="true" selection-start-line="64350" selection-start-column="129" selection-end-line="64350" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/google/cloud/firestore_v1beta1/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1001">
+          <caret line="155" column="30" lean-forward="true" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Test_no_i2c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#204#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/array.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="474">
+          <caret line="64000" column="4" lean-forward="true" selection-start-line="64000" selection-start-column="4" selection-end-line="64000" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Well.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <marker date="1540121731520" expanded="true" signature="1227:1329" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-691">
+          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1540123445721" expanded="true" signature="2612:2803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

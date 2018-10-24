@@ -11,7 +11,8 @@ class WellReading():
         Well Reading class takes the dimension from the well class and the water level measurement from
         the Reading class and calculates the volume
     """
-    def __init__(self, well, raw_data, timestamp ,reading_id=0, volume=0):
+
+    def __init__(self, well, raw_data, timestamp, reading_id=0, volume=0):
         """
             Constructor of the Well Reading class, takes well class and water level measurement and calculates
             volume. Optionally, if a volume value is passed the volume calculation is passed.
@@ -57,6 +58,17 @@ class WellReading():
         reading += "\n\t Timestamp = {}".format(self.__timestamp)
         # logger.debug("\n" + reading)
         return reading
+
+    def to_dict(self):
+        """
+            Return the object as a Dictionary
+        :return: Class instance as Dict
+        """
+        return {
+            "Level": self.__level,
+            "Volume": self.__volume,
+            "Timestamp": datetime.strptime(self.__timestamp , "%Y-%m-%d %H:%M:%S.%f")
+        }
 
     def calculate_volume(self, raw_data):
         """
@@ -115,9 +127,17 @@ class WellReading():
         return self.__id
 
     def get_timestamp(self):
-        return  self.__timestamp
+        """
+            get timestamp of the moment of reading
+        :return: reading timestamp
+        """
+        return self.__timestamp
 
     def set_timestamp(self, timestanmp):
+        """
+            set the moment of reading from the well
+        :param timestanmp: new timestmap value
+        """
         if isinstance(timestanmp, datetime):
             self.__timestamp = timestanmp
         else:
