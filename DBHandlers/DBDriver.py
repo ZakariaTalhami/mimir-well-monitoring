@@ -91,4 +91,4 @@ class DBDriver:
                           FOREIGN="KEY(well_id) REFERENCES Well(id)")
 
 
-db_driver = DBDriver()
+#db_driver = DBDriver()

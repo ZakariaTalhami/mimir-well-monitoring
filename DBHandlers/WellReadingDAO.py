@@ -1,5 +1,5 @@
 import logging
-from DBHandlers.DBDriver import db_driver
+from DBHandlers.DBDriver import DBDriver
 from DBHandlers.WellDAO import WellDAO
 from Models.Well import Well
 from Models.WellReading import WellReading
@@ -12,6 +12,9 @@ class WellReadingDAO:
         DAO for WellReading objects, handles all the data access (CRUD) of the wellReading objects in the database
     """
     __tablename__ = WellReading.__name__
+    
+    def __init__(self):
+        self.__db_driver = DBDriver()
 
     def save(self, reading):
         """
@@ -35,7 +38,7 @@ class WellReadingDAO:
                 param = (self.reading.get_well().get_well_id(), self.reading.get_level(), self.reading.get_volume(),
                          self.reading.get_timestamp())
 
-            db_driver.insert(query, param)
+            self.__db_driver.insert(query, param)
         else:
             raise ValueError
 
@@ -47,7 +50,7 @@ class WellReadingDAO:
         logger.info("Reading all Well Readings")
         query = "SELECT * FROM {0} " \
                 "INNER JOIN {1} ON {0}.well_id = {1}.id".format(self.__tablename__, WellDAO.__tablename__)
-        result = db_driver.query(query)
+        result = self.__db_driver.query(query)
         logger.debug("Query result \n{}".format(result))
         reading_list = []
         for entry in result:
@@ -65,7 +68,7 @@ class WellReadingDAO:
         query = "SELECT * FROM {0} " \
                 "INNER JOIN {1} ON {0}.well_id = {1}.id " \
                 "where {0}.id = {2}".format(self.__tablename__, WellDAO.__tablename__, select_id)
-        entry = db_driver.query(query)[0]
+        entry = self.__db_driver.query(query)[0]
         logger.debug("Result: {}".format(entry))
         well = Well(entry["well_id"], entry["area"], entry["height"])
         return WellReading(well, entry["level"], entry["time"], entry["id"], entry["volume"])
@@ -86,7 +89,7 @@ class WellReadingDAO:
                                             reading.get_level(),
                                             reading.get_volume(),
                                             reading.get_id())
-            db_driver.update(query)
+            self.__db_driver.update(query)
         else:
             raise ValueError
 
@@ -98,4 +101,4 @@ class WellReadingDAO:
         """
         logger.info("Deleting Reading with id = {}".format(reading_id))
         query = "DELETE FROM {} WHERE id = {}".format(self.__tablename__, reading_id)
-        db_driver.update(query)
+        self.__db_driver.update(query)

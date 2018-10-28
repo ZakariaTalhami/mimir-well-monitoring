@@ -67,7 +67,8 @@ class WellReading():
         return {
             "Level": self.__level,
             "Volume": self.__volume,
-            "Timestamp": datetime.strptime(self.__timestamp , "%Y-%m-%d %H:%M:%S.%f")
+            #"Timestamp": datetime.strptime(self.__timestamp , "%Y-%m-%d %H:%M:%S.%f")
+            "Timestamp": self.__timestamp
         }
 
     def calculate_volume(self, raw_data):

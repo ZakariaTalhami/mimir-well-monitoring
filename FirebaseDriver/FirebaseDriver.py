@@ -29,9 +29,10 @@ class CloudConnect:
         logger.info("Init Cloud Connection")
         cred = credentials.Certificate(
             str(path / "waterlevelmonitoringsyst-3ca70-firebase-adminsdk-u40sf-09a38a7e8f.json"))
-        firebase_admin.initialize_app(cred, {
-            'projectId': u"waterlevelmonitoringsyst-3ca70",
-        })
+        if(not len(firebase_admin._apps)):
+            firebase_admin.initialize_app(cred, {
+                'projectId': u"waterlevelmonitoringsyst-3ca70",
+            })
         self.db = firestore.client()
 
     def save_well(self, well):

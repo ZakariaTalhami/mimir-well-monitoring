@@ -1,7 +1,7 @@
 import logging
+import logging.config
 import time
 from datetime import datetime
-
 import pigpio
 import struct
 
@@ -17,16 +17,26 @@ import struct
 from Linker.Linker import Linker
 from Models.Reading import Reading
 
+def init_logging():
+    logging.config.fileConfig('logs//logger.conf', disable_existing_loggers=False)
+    logging.info("-------------------------------------------------------- |")
+    logging.info("-------           New Logging session            ------- |")
+    logging.info("-------------------------------------------------------- |")
+
+
+init_logging()
+
 I2C_ADDR = 9
 
 logger = logging.getLogger(__name__)
-linker = Linker()
+
 
 def i2c(id, tick):
+
     # print("Inside the Even Callback")
     logger.info("Receiving I2C communications")
     global pi
-
+    linker = Linker()
     # Read the I2C communication
     s, b, data = pi.bsc_i2c(I2C_ADDR)
 
@@ -40,7 +50,7 @@ def i2c(id, tick):
         logger.debug("Bytes converted to :> id = {} , measurement = {}".format(well_id , measurement))
 
         logger.info("Creadting a Reading instance from I2C data")
-        reading = Reading(int(id) , measurement , datetime.now())
+        reading = Reading(int(well_id) , measurement , datetime.now())
         logger.debug("Received Reading :\n{}".format(reading))
 
         linker.link_and_persist(reading)
