@@ -74,7 +74,7 @@ class CloudConnect:
     def save_reading(self, wellReading):
         logger.info("Persisting Reading to the cloud")
         try:
-            well_ref = self.db.collection("Well-Nodes2").document("Well_{}".format(wellReading.get_well().get_well_id()))
+            well_ref = self.db.collection("Well-Nodes").document("Well_{}".format(wellReading.get_well().get_well_id()))
 
             well_ref.collection('Readings').add(
                 wellReading.to_dict()

@@ -10,7 +10,6 @@ from DBHandlers.WellDAO import WellDAO
 
 logger = logging.getLogger(__name__)
 
-# TODO Fix the saving to take the address of this folder so it doesnt save data in other locations when called
 class DataGenerator:
     """
         A Data Generator class, that uses a count value to generate that amount of test data to be used
