@@ -22,6 +22,18 @@ struct Reading{
   float id;
   float measurement;
 };
+int ids[] =  {1 ,  3 , 8 , 13 , 16 , 24 ,
+        28 , 30 , 42 , 52 , 53 , 61 ,
+        65 , 68 , 72 , 74 , 78 , 83 , 87 ,
+        90 , 94 , 99 , 100 , 111 , 114 , 
+        159 , 169 , 170 , 172 , 193 , 200 ,
+        233 , 234 , 235 , 236 , 258 , 263 ,
+        272 , 281 , 284 , 294 , 323 , 324 ,
+        332 , 334 , 354 , 363 , 367 , 377 ,
+        395 , 418 , 505 , 509 , 512 , 535 , 
+        538 , 602 , 630 , 632 , 656 , 706 , 
+        739 , 752 , 759 , 765 , 831 , 846 ,
+        866 , 888 , 889 , 916 , 920 , 998};
 
 void setup() {
   Wire.begin(); // join i2c bus (address optional for master)
@@ -34,29 +46,15 @@ void setup() {
 byte x = 0;
 
 void loop() {
-  if (radio.available()){
-    int done = 0;    
-    while (done == 0){
-      radio.read(msg, 1);     
-      done = 1;
-      // display recieved data, mapping is done for my water container
-      Serial.print("Water Level: "); 
-      Serial.print(-5*(msg[0]-17));
-      Serial.println("%");
-      delay(10);
-    }
-  }
 
-
-
-
-
-  
   Reading r;
-  r.id = random(0 , 25);
-  r.measurement = (float) msg[0];
+  r.id = float(ids[random(0 , 73)]);
+  r.measurement = float(random(25 , 255));
+  Serial.print(r.id);
+  Serial.print(" ");
+  Serial.println(r.measurement);
   sendReading(r);
-  delay(2000);
+  delay(60000);
 }
 
 
