@@ -19,6 +19,7 @@ import logging.config
 from Models.WellReading import WellReading
 from Test.TestDataGenerator import DataGenerator
 from Test.Test_no_i2c import TestNoI2C
+from reading_synch import ReadingSynch
 
 
 def init_logging():
@@ -45,6 +46,7 @@ randint = rand.randint(0, 1000)
 # well5DAo.update(well5)
 # # well5DAo.delete(well5.get_well_id())
 #
+# well5 = well5DAo.read_by_id(916)
 # reading_id = rand.randint(0 , 1000)
 # reading = WellReading(well5, round(rand.uniform(1, 30), 3), datetime.now(), reading_id=reading_id)
 # readingDAO = WellReadingDAO()
@@ -69,18 +71,18 @@ randint = rand.randint(0, 1000)
 # # db.insert_data("hello", main="TEXT", comesafter=
 
 
-well_dao = WellDAO()
-well_list = well_dao.read_all()
-UUID_list = [x.get_well_id() for x in well_list]
-gen = DataGenerator()
-gen.set_count(5)
-gen.set_uuid_list(UUID_list)
-start = time.time()
-gen.generator()
-end = time.time()
+#well_dao = WellDAO()
+#well_list = well_dao.read_all()
+#UUID_list = [x.get_well_id() for x in well_list]
+#gen = DataGenerator()
+#gen.set_count(5)
+#gen.set_uuid_list(UUID_list)
+#start = time.time()
+#gen.generator()
+#end = time.time()
 # # #
-tester = TestNoI2C(5 , "test.csv")
-tester.run()
+#tester = TestNoI2C(5 , "test.csv")
+#tester.run()
 
 # con = CloudConnect()
 # ret = con.read_all_wells()
@@ -89,4 +91,7 @@ tester.run()
 # wells = wellDao.read_all()
 # con = CloudConnect(u"waterlevelmonitoringsyst-3ca70")
 # for well in wells:
-#     con.save_well(well)
+	# con.save_well(well)
+
+synch = ReadingSynch()
+synch.start()

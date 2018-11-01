@@ -12,7 +12,7 @@ class WellReadingDAO:
         DAO for WellReading objects, handles all the data access (CRUD) of the wellReading objects in the database
     """
     __tablename__ = WellReading.__name__
-    
+
     def __init__(self):
         self.__db_driver = DBDriver()
 
@@ -102,3 +102,10 @@ class WellReadingDAO:
         logger.info("Deleting Reading with id = {}".format(reading_id))
         query = "DELETE FROM {} WHERE id = {}".format(self.__tablename__, reading_id)
         self.__db_driver.update(query)
+
+    def delete_list(self, id_list):
+        logger.info("Deleting wellRedings = ( {} )".format(id_list))
+        query = "DELETE FROM {} WHERE id IN ({})".format(self.__tablename__, ", ".join('?' * len(id_list)))
+        print(query)
+        # insert only used because of laziness
+        self.__db_driver.insert(query, id_list)
