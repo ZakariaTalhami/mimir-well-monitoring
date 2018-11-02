@@ -55,7 +55,12 @@ class WellDAO:
         logger.info("Selecting Well with id = {}".format(select_id))
         query = "SELECT * FROM {} WHERE id = {}".format(self.__tablename__, select_id)
         # TODO Check the size result before indexing
-        entry = self.__db_driver.query(query)[0]
+        entry = self.__db_driver.query(query)
+        if len(entry) > 0:
+            entry = entry[0]
+        else:
+            logger.info("Well not found in the database")
+            return False
         logger.debug("Result: {}".format(entry))
         return Well(entry[0], entry[1], entry[2])
 

@@ -43,11 +43,15 @@ class Linker:
 
         # Convert Stage
         if isinstance(readings, Reading):
-            target_list.append(self.convert_reading_to_well_reading(readings))
+            well_reading = self.convert_reading_to_well_reading(readings)
+            if well_reading:
+                target_list.append(well_reading)
 
         elif isinstance(readings, list) and all([isinstance(x, Reading) for x in readings]):
             for entry in readings:
-                target_list.append(self.convert_reading_to_well_reading(entry))
+                well_reading = self.convert_reading_to_well_reading(entry)
+                if well_reading:
+                    target_list.append(well_reading)
         else:
             raise ValueError
 
@@ -77,6 +81,11 @@ class Linker:
         # have to change Reading class to include UID
         well_uuid = reading.get_well_id()  # What happens if the UUID is not found in the DB
         source_well = self.__welldao.read_by_id(well_uuid)
+        if not source_well:
+            source_well = self.__firebase.read_well(well_uuid)
+            if not source_well:
+                return False
+            self.__welldao.save(source_well)
         logger.debug("Retrieved Well information")
         target = WellReading(source_well, reading.get_raw_data(), reading.get_timestamp())
         logger.debug("\n{}".format(target))
