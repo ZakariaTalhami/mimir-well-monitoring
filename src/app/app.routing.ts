@@ -9,6 +9,7 @@ import { P500Component } from './views/error/500.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 
+
 export const routes: Routes = [
   {
     path: '',
@@ -64,7 +65,7 @@ export const routes: Routes = [
       },
       {
         path: 'dashboard',
-        loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+        loadChildren: './views/dashboard/dashboard.module#DashboardModule',
       },
       {
         path: 'icons',
@@ -88,6 +89,9 @@ export const routes: Routes = [
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: [
+
+  ]
 })
 export class AppRoutingModule {}

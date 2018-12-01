@@ -41,7 +41,7 @@ export class FireUpService {
    }
 
    getReadings(wellID: string){
-     return this.afs.collection('Well-Nodes').doc(wellID).collection('Readings').snapshotChanges().pipe(
+     return this.afs.collection('Well-Nodes').doc(wellID).collection('Readings' , ref => ref.orderBy("Timestamp")).snapshotChanges().pipe(
        map(res => {
         return res.map(a => {
           const data = a.payload.doc.data() as reading;

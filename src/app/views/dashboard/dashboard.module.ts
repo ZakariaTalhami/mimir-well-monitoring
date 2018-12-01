@@ -9,13 +9,17 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { CardsComponent } from '../base/cards.component'
 
+
+import { CommonModule } from '@angular/common';
+
 @NgModule({
   imports: [
     FormsModule,
     DashboardRoutingModule,
     ChartsModule,
     BsDropdownModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    CommonModule
   ],
   declarations: [ 
     DashboardComponent,

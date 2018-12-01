@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -10,6 +12,7 @@ import { environment } from '../environments/environment'
 import { AngularFirestoreModule } from 'angularfire2/firestore'
 import { AngularFireModule } from 'angularfire2'
 import { FireUpService } from './services/fire-up.service'
+import { AuthService } from './services/auth_service/auth.service';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -45,6 +48,7 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -60,7 +64,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     TabsModule.forRoot(),
     ChartsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    CommonModule,
+    FormsModule,
+    AngularFireAuthModule
   ],
   declarations: [
     AppComponent,
@@ -74,7 +81,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     provide: LocationStrategy,
     useClass: HashLocationStrategy
   },
-  FireUpService
+  FireUpService,
+  AuthService
   ],
   bootstrap: [ AppComponent ]
 })

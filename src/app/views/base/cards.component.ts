@@ -1,20 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FireUpService } from '../../services/fire-up.service';
 import { Well } from '../../models/well';
-import { reading } from '../../models/reading';
+import { Observable } from 'rxjs'
 
 @Component({
   selector: 'card-comp',
   templateUrl: 'cards.component.html'
 })
 export class CardsComponent {
+  @Input() Testing: string;
 
   wells: Well[];
   wellID: string;
   reading: number;
   volume: number;
 
+  temp:Observable<Well>;
+
   constructor(private wellDAO: FireUpService) {
+
     this.wellDAO.getWells().subscribe(item => {
       console.log(item);
       
@@ -26,14 +30,8 @@ export class CardsComponent {
         let levels = data.map(item => item.Level);
         let vol = data.map(item => item.Volume);
         console.log(levels);
-        // let times = data.map(item => {
-        //   let x = new Date();
-        //   x.setSeconds(item.Timestamp.seconds);
-        //   return x;
-        // });
         this.reading = levels.pop();
         this.volume = vol.pop();
-        // console.log(times);
       } );
       
     });
