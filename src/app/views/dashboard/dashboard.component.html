@@ -1,5 +1,10 @@
 <div class="animated fadeIn">
-  <card-comp [Testing]="deleteMe"></card-comp>
+  <div *ngIf="wellLoaded" class="row">
+    <div *ngFor="let well of wells" class="col-sm-6 col-lg-3">
+        <card-comp (click)="changeChart($event)" [wellID]="well.id" id="{{well.id}}"></card-comp>
+    </div>
+  </div>
+  <!-- <card-comp [Testing]="deleteMe"></card-comp> -->
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-primary">
@@ -113,7 +118,7 @@
           <div class="small text-muted">November 2017</div>
         </div><!--/.col-->
         <div class="col-sm-7 d-none d-md-block">
-          <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
+          <button (click)="downloadReading()" type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
           <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
             <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Day</label>
             <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Month</label>
@@ -121,7 +126,7 @@
           </div>
         </div><!--/.col-->
       </div><!--/.row-->
-      <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+      <div class="chart-wrapper" style="height:300px;margin-top:40px;" *ngIf="mainChartLabels.length > 0">
         <canvas baseChart class="chart"
         [datasets]="mainChartData"
         [labels]="mainChartLabels"
@@ -203,7 +208,7 @@
       <div class="brand-card">
         <div class="brand-card-header bg-twitter">
           <i class="fa fa-twitter"></i>
-          <div class="chart-wrapper">
+          <div class="chart-wrapper" >
             <canvas baseChart class="chart"
             [datasets]="brandBoxChartData2"
             [labels]="brandBoxChartLabels"
