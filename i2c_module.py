@@ -49,11 +49,19 @@ def i2c(id, tick):
         well_id, measurement = struct.unpack("ff", data)
         logger.debug("Bytes converted to :> id = {} , measurement = {}".format(well_id, measurement))
 
-        logger.info("Creating a Reading instance from I2C data")
-        reading = Reading(int(well_id), measurement, datetime.now())
-        logger.debug("Received Reading :\n{}".format(reading))
+        if measurement > 0:
+            logger.info("Creating a Reading instance from I2C data")
+            reading = Reading(int(well_id), measurement, datetime.now())
+            logger.debug("Received Reading :\n{}".format(reading))
+            linker.link_and_persist(reading)
+        else:
+            if measurement == -1:
+                logger.error("Well {} failed to send measurement", well_id)
+            elif measurement == 0:
+                logger.error("Invalid measurement of zero from well {} ", well_id)
 
-        linker.link_and_persist(reading)
+
+
     else:
         logger.info("I2C reading failed, expected 8 bytes received {}".format(b))
 
