@@ -5,6 +5,7 @@ import { Well } from '../models/well';
 import { reading } from '../models/reading';
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
+import { stats } from '../models/stats';
 
 
 @Injectable({
@@ -51,6 +52,18 @@ export class FireUpService {
        })
      );
 
+   }
+
+   getArchivedStats(wellID: string){
+    return this.afs.collection('stats').doc(wellID).collection('Archive').snapshotChanges().pipe(
+      map(res => {
+       return res.map(a => {
+         const data = a.payload.doc.data() as stats;
+         data.id = a.payload.doc.id;
+         return data;
+       })
+      })
+    );
    }
 }
 

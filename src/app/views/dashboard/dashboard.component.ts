@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
   wells:Well[];
   readings: reading[];
   readingList={};
+  wellID:string;
 
 
   radioModel: string = 'Month';
@@ -408,26 +409,40 @@ export class DashboardComponent implements OnInit {
         // console.log(item);
         this.wells = item;  
         this.wellLoaded = true;
-
+        this.wellID = this.wells[0].id
+        console.log("pizza and candy");
+        console.log(this.wellID);
+        console.log("pizza and candy");
+        
         if (this.wells.length < 0){ return }
 
-        this.wellService.getReadings(this.wells[0].id).subscribe(res => {
-          this.readingList[this.wells[0].id] = res;
-          this.readings = res;
-          this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
-          this.mainChartData[0].data = this.readings.map(res => res.Level);
-          this.mainChartData[1].data = this.readings.map(res => res.Volume);
-      })
+      //   this.wellService.getReadings(this.wellID).subscribe(res => {
+      //     console.log("Burger");
+      //     console.log(this.wellID);
+      //     console.log("Burger");
+      //     this.readingList[this.wellID] = res;
+      //     this.readings = res;
+      //     this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+      //     this.mainChartData[0].data = this.readings.map(res => res.Level);
+      //     this.mainChartData[1].data = this.readings.map(res => res.Volume);
+      // })
 
-      for (let i = 1; i < this.wells.length; i++) {
+      for (let i = 0; i < this.wells.length; i++) {
         const well = this.wells[i];
         console.log(well);
 
         this.wellService.getReadings(well.id).subscribe(res => {
             this.readingList[well.id] = res;
+            if(well.id == this.wellID){
+              this.readings = res;
+              this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+              this.mainChartData[0].data = this.readings.map(res => res.Level);
+              this.mainChartData[1].data = this.readings.map(res => res.Volume);
+            }
         })
 
       }
+      
     });
 
     // this.wellService.getReadings('Well_1').subscribe(res => {
@@ -475,7 +490,8 @@ export class DashboardComponent implements OnInit {
 
   changeChart(event: any){
     var target = event.currentTarget;
-    const id = target.attributes.id.nodeValue;    
+    const id = target.attributes.id.nodeValue;
+    this.wellID = id;   
     console.log(id);
     console.log(this.readingList[id]);
     this.readings = this.readingList[id];
