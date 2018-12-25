@@ -126,18 +126,18 @@ class i2cMaster:
         logger.info("Getting the list of well ids")
         well_list = self.__firebase.read_all_wells()
         well_ids = [well.get_well_id() for well in well_list]
-        logger.debug("Got ids of :> ",well_ids)
+        logger.debug("Got ids of :> {}".format(",".join(well_ids)))
         return well_ids
 
     def get_reading_i2c(self, id: int):
         # send cmd and id
-        logger.info("Sending to slave CMD {} and well id {}", READ_CMD , id)
+        logger.info("Sending to slave CMD {} and well id {}".format( READ_CMD , id))
         self.__bus.write_byte_data(self.__slave_address, READ_CMD, id)
         time.sleep(1)
         # receive float / 4 bytes
-        logger.info("Reading from the slave with CMD {}",READ_CMD)
-        raw = self.__bus.read_byte_data(self.__slave_address, READ_CMD)
-        logger.info("Slave returned :> {}",raw)
+        logger.info("Reading from the slave with CMD {}".format(READ_CMD))
+        raw = self.__bus.read_i2c_block_data(self.__slave_address, READ_CMD , 4)
+        logger.info("Slave returned :> {}".format(" ".join(str(raw))))
         return raw
 
     def run(self):
@@ -148,9 +148,9 @@ class i2cMaster:
                 linker = Linker()
                 well_ids = self.get_well_ids()
                 for id in well_ids:
-                    raw = self.get_reading_i2c();
-                    reading = Reading(id, raw, datetime.now())
-                    linker.link_and_persist(reading)
+                    raw = self.get_reading_i2c(int(id));
+#                    reading = Reading(id, raw, datetime.now())
+#                    linker.link_and_persist(reading)
                 time.sleep(10)
             except KeyboardInterrupt:
                 quit()
