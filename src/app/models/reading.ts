@@ -1,6 +1,6 @@
 export interface reading{
     id?:string;
     Level: number;
-    Timestamp: string;
+    Timestamp: any;
     Volume:number; 
 }

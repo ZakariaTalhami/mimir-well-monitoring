@@ -2,11 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
+import { FireUpService } from '../../services/fire-up.service';
+import { Well } from '../../models/well';
+import { reading } from '../../models/reading';
 
 @Component({
   templateUrl: 'dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
+  wellLoaded: boolean = false;
+  wells:Well[];
+  readings: reading[];
+  readingList={};
+  wellID:string;
+
 
   radioModel: string = 'Month';
   deleteMe: string = 'hola';
@@ -218,22 +227,24 @@ export class DashboardComponent implements OnInit {
   public mainChartData2: Array<number> = [];
   public mainChartData3: Array<number> = [];
 
+  // public mainChartData: Array<any> = [];
   public mainChartData: Array<any> = [
     {
       data: this.mainChartData1,
-      label: 'Current'
+      label: 'Level'
     },
     {
       data: this.mainChartData2,
-      label: 'Previous'
+      label: 'Volume'
     },
-    {
-      data: this.mainChartData3,
-      label: 'BEP'
-    }
+    // {
+    //   data: this.mainChartData3,
+    //   label: 'BEP'
+    // }
   ];
   /* tslint:disable:max-line-length */
-  public mainChartLabels: Array<any> = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  // public mainChartLabels: Array<any> = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Thursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    public mainChartLabels: Array<any> = [];
   /* tslint:enable:max-line-length */
   public mainChartOptions: any = {
     tooltips: {
@@ -245,6 +256,13 @@ export class DashboardComponent implements OnInit {
       callbacks: {
         labelColor: function(tooltipItem, chart) {
           return { backgroundColor: chart.data.datasets[tooltipItem.datasetIndex].borderColor };
+        },
+        title: function(items , data){
+          console.log(items , data);
+          // console.log(data.labels[items.index]);
+          let stamp = data.labels[items[0].index];
+          return data.labels[items[0].index];
+          // return stamp.getFullYear()+":"+stamp.getMonth()+":"+stamp.getDate()+" "+items[0].xLabel ;
         }
       }
     },
@@ -252,22 +270,23 @@ export class DashboardComponent implements OnInit {
     maintainAspectRatio: false,
     scales: {
       xAxes: [{
+        display:true,
         gridLines: {
-          drawOnChartArea: false,
+          drawOnChartArea: true,
         },
         ticks: {
           callback: function(value: any) {
-            return value.charAt(0);
+            return value.getHours()+":"+value.getMinutes();
           }
         }
       }],
       yAxes: [{
-        ticks: {
-          beginAtZero: true,
-          maxTicksLimit: 5,
-          stepSize: Math.ceil(250 / 5),
-          max: 250
-        }
+        // ticks: {
+        //   beginAtZero: true,
+        //   maxTicksLimit: 5,
+        //   stepSize: Math.ceil(250 / 5),
+        //   max: 250
+        // }
       }]
     },
     elements: {
@@ -292,7 +311,8 @@ export class DashboardComponent implements OnInit {
       pointHoverBackgroundColor: '#fff'
     },
     { // brandSuccess
-      backgroundColor: 'transparent',
+      // backgroundColor: 'transparent',
+      backgroundColor: hexToRgba(getStyle('--success'), 10),
       borderColor: getStyle('--success'),
       pointHoverBackgroundColor: '#fff'
     },
@@ -375,16 +395,109 @@ export class DashboardComponent implements OnInit {
   public brandBoxChartLegend = false;
   public brandBoxChartType = 'line';
 
+  constructor(private wellService: FireUpService){
+
+  }
+
   public random(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   ngOnInit(): void {
     // generate random values for mainChart
-    for (let i = 0; i <= this.mainChartElements; i++) {
-      this.mainChartData1.push(this.random(50, 200));
-      this.mainChartData2.push(this.random(80, 100));
-      this.mainChartData3.push(65);
-    }
+    this.wellService.getWells().subscribe(item => {
+        // console.log(item);
+        this.wells = item;  
+        this.wellLoaded = true;
+        this.wellID = this.wells[0].id
+        console.log("pizza and candy");
+        console.log(this.wellID);
+        console.log("pizza and candy");
+        
+        if (this.wells.length < 0){ return }
+
+      //   this.wellService.getReadings(this.wellID).subscribe(res => {
+      //     console.log("Burger");
+      //     console.log(this.wellID);
+      //     console.log("Burger");
+      //     this.readingList[this.wellID] = res;
+      //     this.readings = res;
+      //     this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+      //     this.mainChartData[0].data = this.readings.map(res => res.Level);
+      //     this.mainChartData[1].data = this.readings.map(res => res.Volume);
+      // })
+
+      for (let i = 0; i < this.wells.length; i++) {
+        const well = this.wells[i];
+        console.log(well);
+
+        this.wellService.getReadings(well.id).subscribe(res => {
+            this.readingList[well.id] = res;
+            if(well.id == this.wellID){
+              this.readings = res;
+              this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+              this.mainChartData[0].data = this.readings.map(res => res.Level);
+              this.mainChartData[1].data = this.readings.map(res => res.Volume);
+            }
+        })
+
+      }
+      
+    });
+
+    // this.wellService.getReadings('Well_1').subscribe(res => {
+    //     this.readings = res;
+    //     this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+    //     this.mainChartData[0].data = this.readings.map(res => res.Level);
+    // })
+
+    // for (let i = 0; i <= this.mainChartElements; i++) {
+    //   this.mainChartData1.push(this.random(50, 200));
+    //   this.mainChartData2.push(this.random(80, 100));
+    //   this.mainChartData3.push(65);
+    // }
+
+    // console.log('in the Dash');
+    // console.log(this.wells);
+    
+    
+  }
+
+
+  downloadReading(){
+    // console.log('downloadReading');
+    let csvContent = "data:text/csv;charset=utf-8,Level,Volume,Timestamp,\r\n";
+    // console.log(this.mainChartData[0].data);
+    
+    this.readings.forEach(function(reading){
+      // console.log(reading);
+      let row = reading.Level+","+reading.Volume+","+(new Date(reading.Timestamp.seconds))
+      // Error this is an object
+      // row = arr.join(",");
+      csvContent += row + "\r\n";
+    }); 
+    // console.log(csvContent);
+    var encodedUri = encodeURI(csvContent);
+    var link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "my_data.csv");
+    document.body.appendChild(link); // Required for FF
+
+    link.click(); // This will download the data file named "my_data.csv".
+    
+  }
+
+
+  changeChart(event: any){
+    var target = event.currentTarget;
+    const id = target.attributes.id.nodeValue;
+    this.wellID = id;   
+    console.log(id);
+    console.log(this.readingList[id]);
+    this.readings = this.readingList[id];
+    // let arr = this.readingList[id]
+    this.mainChartLabels = this.readings.map(res => new Date(res.Timestamp.seconds));
+    this.mainChartData[0].data = this.readings.map(res => res.Level);
+    this.mainChartData[1].data = this.readings.map(res => res.Volume);
   }
 }
