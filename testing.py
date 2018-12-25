@@ -93,5 +93,5 @@ randint = rand.randint(0, 1000)
 # for well in wells:
 	# con.save_well(well)
 
-synch = ReadingSynch()
-synch.start()
+# synch = ReadingSynch()
+# synch.start()
