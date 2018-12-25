@@ -92,6 +92,7 @@
 
 import smbus
 import time
+import struct
 import logging
 import logging.config
 from DBHandlers.WellDAO import WellDAO
@@ -100,6 +101,7 @@ from FirebaseDriver.FirebaseDriver import CloudConnect
 from Linker.Linker import Linker
 from Models.Reading import Reading
 from datetime import datetime
+
 
 def init_logging():
     logging.config.fileConfig('logs//logger.conf', disable_existing_loggers=False)
@@ -131,14 +133,22 @@ class i2cMaster:
 
     def get_reading_i2c(self, id: int):
         # send cmd and id
-        logger.info("Sending to slave CMD {} and well id {}".format( READ_CMD , id))
+        logger.info("Sending to slave CMD {} and well id {}".format(READ_CMD, id))
         self.__bus.write_byte_data(self.__slave_address, READ_CMD, id)
         time.sleep(1)
         # receive float / 4 bytes
         logger.info("Reading from the slave with CMD {}".format(READ_CMD))
-        raw = self.__bus.read_i2c_block_data(self.__slave_address, READ_CMD , 4)
+        raw = self.__bus.read_i2c_block_data(self.__slave_address, READ_CMD, 4)
         logger.info("Slave returned :> {}".format(" ".join(str(raw))))
+        raw = self.convert_to_float(raw)
         return raw
+
+    def convert_to_float(self, data):
+        my_hex = ":".join("{:02x}".format(x) for x in data)
+        logger.info("Convert Raw Bytes into well_id and measurement: {}".format(my_hex))
+        measurement = struct.unpack("f", data)
+        logger.debug("Bytes converted to :> measurement = {}".format( measurement))
+        return measurement;
 
     def run(self):
         logger.info("I2C master has been run")
@@ -149,11 +159,12 @@ class i2cMaster:
                 well_ids = self.get_well_ids()
                 for id in well_ids:
                     raw = self.get_reading_i2c(int(id));
-#                    reading = Reading(id, raw, datetime.now())
-#                    linker.link_and_persist(reading)
+                #                    reading = Reading(id, raw, datetime.now())
+                #                    linker.link_and_persist(reading)
                 time.sleep(10)
             except KeyboardInterrupt:
                 quit()
+
 
 if __name__ == '__main__':
     i2c = i2cMaster(0x10)
