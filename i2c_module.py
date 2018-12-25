@@ -114,12 +114,12 @@ READ_CMD = 10
 
 
 class i2cMaster:
-    def __init__(self):
+    def __init__(self, slave):
         logger.info("Init the i2cMaster")
         self.__wellreadingdao = WellReadingDAO()
         self.__welldao = WellDAO()
         self.__firebase = CloudConnect()
-        self.__slave_address = 0x10
+        self.__slave_address = slave
         self.__bus = smbus.SMBus(1)
 
     def get_well_ids(self):
@@ -154,3 +154,7 @@ class i2cMaster:
                 time.sleep(10)
             except KeyboardInterrupt:
                 quit()
+
+if __name__ == '__main__':
+    i2c = i2cMaster(0x10)
+    i2c.run()
