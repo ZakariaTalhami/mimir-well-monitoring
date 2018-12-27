@@ -1,0 +1,5 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Well|\l|get_area()\lget_height()\lget_well_id()\lset_area()\lset_height()\lset_well_id()\lto_dict()\l}", shape="record"];
+}

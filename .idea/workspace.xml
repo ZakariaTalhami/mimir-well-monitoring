@@ -6,10 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e259c32-1440-42f1-89d4-ac722e968ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/ftp-sync.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FirebaseDriver/waterlevelmonitoringsyst-3ca70-firebase-adminsdk-u40sf-09a38a7e8f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/classes.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/classes.new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/classes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/packages.new.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logger_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logger_debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logger_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logger_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading_synch.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_synch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +92,7 @@
         <counts>
           <entry key="conf" value="1" />
           <entry key="csv" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="log" value="4" />
           <entry key="py" value="116" />
           <entry key="sh" value="1" />
@@ -99,7 +106,7 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Database Element" value="6" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="Python" value="116" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="5" />
@@ -186,7 +193,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reading_synch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -210,6 +217,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Initializer.sh">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -252,7 +268,6 @@
         <option value="$PROJECT_DIR$/FirebaseDriver/__init__.py" />
         <option value="$PROJECT_DIR$/Models/__init__.py" />
         <option value="$PROJECT_DIR$/Test/Test_no_i2c.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Models/Well.py" />
         <option value="$PROJECT_DIR$/Models/WellReading.py" />
         <option value="$PROJECT_DIR$/Test/TestDataGenerator.py" />
@@ -266,6 +281,7 @@
         <option value="$PROJECT_DIR$/i2c_module.py" />
         <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/reading_synch.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -730,9 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/firebase_admin/firestore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -907,6 +920,13 @@
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
