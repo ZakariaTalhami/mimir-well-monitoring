@@ -140,15 +140,21 @@ class i2cMaster:
         logger.info("Reading from the slave with CMD {}".format(READ_CMD))
         raw = self.__bus.read_i2c_block_data(self.__slave_address, READ_CMD, 4)
         logger.info("Slave returned :> {}".format(" ".join(str(raw))))
-        raw = self.convert_to_float(raw)
+        raw = self.convert_to_float(self.convert_list_to_byte_array(raw))
         return raw
+
+    def convert_list_to_byte_array(self,list):
+        data = bytearray()
+        for i in list:
+            data.append(i)
+        return data
 
     def convert_to_float(self, data):
         my_hex = ":".join("{:02x}".format(x) for x in data)
         logger.info("Convert Raw Bytes into well_id and measurement: {}".format(my_hex))
         measurement = struct.unpack("f", data)
-        logger.debug("Bytes converted to :> measurement = {}".format( measurement))
-        return measurement;
+        logger.debug("Bytes converted to :> measurement = {}".format( measurement[0]))
+        return measurement[0];
 
     def run(self):
         logger.info("I2C master has been run")
