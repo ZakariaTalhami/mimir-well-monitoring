@@ -691,3 +691,14 @@ Well 42:
 2018-10-25 21:05:56,323 | Linker.Linker | Thread-1     | __init__:22 || INFO | Init Linker
 2018-10-25 21:05:56,347 | FirebaseDriver.FirebaseDriver | Thread-1     | __init__:29 || INFO | Init Cloud Connection
 2018-10-25 21:05:56,422 | __main__ | Thread-1     | i2c:48 || INFO | Convert Raw Bytes into well_id and measurement: 00:00:d1
+2018-12-27 17:08:23,857 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 17:08:23,857 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 17:08:23,858 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 17:08:23,858 |                       __main__ | MainThread   |           __init__: 22 || INFO | Initiating ReadingSynch
+2018-12-27 17:08:23,859 |                       __main__ | MainThread   |                run: 28 || INFO | Starting ReadingSynch
+2018-12-27 17:08:23,863 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 17:08:33,874 |      DBHandlers.WellReadingDAO | MainThread   |           read_all: 50 || INFO | Reading all Well Readings
+2018-12-27 17:08:33,876 |            DBHandlers.DBDriver | MainThread   |              query: 61 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-12-27 17:08:33,877 |      DBHandlers.WellReadingDAO | MainThread   |           read_all: 54 || DEBUG | Query result 
+[]
+2018-12-27 17:08:33,878 |                       __main__ | MainThread   |                run: 52 || DEBUG | ReadingSynch taking a LONG SLEEP
