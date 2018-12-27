@@ -95,3 +95,6 @@ randint = rand.randint(0, 1000)
 
 # synch = ReadingSynch()
 # synch.start()
+fire = CloudConnect()
+fire.faults_increment_failed_respond(3)
+fire.faults_increment_failed_transmit(3)

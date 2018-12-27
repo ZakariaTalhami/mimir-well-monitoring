@@ -204,3 +204,151 @@
 2018-12-27 17:08:23,863 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
 2018-12-27 17:08:33,874 |      DBHandlers.WellReadingDAO | MainThread   |           read_all: 50 || INFO | Reading all Well Readings
 2018-12-27 17:08:33,876 |            DBHandlers.DBDriver | MainThread   |              query: 61 || INFO | SELECT * FROM WellReading INNER JOIN Well ON WellReading.well_id = Well.id
+2018-12-27 18:18:13,987 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:18:13,988 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:18:13,988 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:18:13,993 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:18:13,994 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:18:13,994 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:18:13,995 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:18:13,999 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:19:20,077 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:19:20,078 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:19:20,078 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:19:20,084 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:19:20,084 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:19:20,085 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:19:20,086 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:19:32,530 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:21:10,189 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:10,190 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:21:10,190 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:10,198 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:10,198 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:21:10,199 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:10,199 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:21:10,204 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:21:12,152 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:12,153 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:21:12,153 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:12,159 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:12,159 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:21:12,160 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:21:12,160 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:21:19,991 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:25:13,583 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:25:13,583 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:25:13,584 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:25:13,589 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:25:13,590 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:25:13,590 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:25:13,591 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:25:16,318 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:26:07,516 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 98 || ERROR | Failed to increment transmission fault
+2018-12-27 18:27:02,906 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:02,907 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:02,907 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:02,912 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:02,912 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:02,912 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:02,913 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:27:08,587 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:08,588 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:08,588 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:08,593 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:08,594 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:08,594 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:08,594 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:27:11,817 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:27:37,489 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:37,489 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:37,490 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:37,494 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:37,494 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:27:37,495 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:27:37,495 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:27:45,267 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:29:53,975 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:29:53,975 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:29:53,976 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:29:53,981 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:29:53,981 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:29:53,981 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:29:53,982 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:29:56,892 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:40:31,545 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:40:31,546 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:40:31,546 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:40:31,550 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:40:31,551 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:40:31,551 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:40:31,552 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:40:46,136 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:43:15,066 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:43:15,067 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:43:15,067 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:43:15,071 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:43:15,072 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:43:15,072 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:43:15,073 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:43:17,413 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 1
+2018-12-27 18:45:27,511 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:27,511 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:27,512 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:27,516 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:27,517 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:27,517 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:27,517 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:45:27,522 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:107 || INFO | Persisting a reply fault for well 1
+2018-12-27 18:45:28,962 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:119 || ERROR | Failed to increment transmission fault
+2018-12-27 18:45:35,242 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:35,242 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:35,243 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:35,246 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:35,246 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:35,246 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:35,247 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:45:35,251 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:107 || INFO | Persisting a reply fault for well 1
+2018-12-27 18:45:36,630 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:119 || ERROR | Failed to increment transmission fault
+2018-12-27 18:45:44,028 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:44,029 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:44,029 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:44,035 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:44,035 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:45:44,036 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:45:44,036 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:45:46,975 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:107 || INFO | Persisting a reply fault for well 1
+2018-12-27 18:47:13,754 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:47:13,754 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:47:13,754 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:47:13,759 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:47:13,760 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:47:13,760 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:47:13,761 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:47:16,230 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:108 || INFO | Persisting a reply fault for well 1
+2018-12-27 18:48:30,504 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:48:30,505 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:48:30,505 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:48:30,509 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:48:30,510 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:48:30,510 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:48:30,511 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:48:33,457 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:107 || INFO | Persisting a reply fault for well 1
+2018-12-27 18:54:12,753 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:54:12,754 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:54:12,754 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:54:12,759 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:54:12,759 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:54:12,760 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:54:12,760 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:54:24,035 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:111 || INFO | Persisting a reply fault for well 3
+2018-12-27 18:54:36,908 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 3
+2018-12-27 18:55:08,679 |                           root | MainThread   |       init_logging: 11 || INFO | -------------------------------------------------------- |
+2018-12-27 18:55:08,680 |                           root | MainThread   |       init_logging: 12 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:55:08,680 |                           root | MainThread   |       init_logging: 13 || INFO | -------------------------------------------------------- |
+2018-12-27 18:55:08,684 |                           root | MainThread   |       init_logging: 27 || INFO | -------------------------------------------------------- |
+2018-12-27 18:55:08,685 |                           root | MainThread   |       init_logging: 28 || INFO | -------           New Logging session            ------- |
+2018-12-27 18:55:08,685 |                           root | MainThread   |       init_logging: 29 || INFO | -------------------------------------------------------- |
+2018-12-27 18:55:08,685 |  FirebaseDriver.FirebaseDriver | MainThread   |           __init__: 29 || INFO | Init Cloud Connection
+2018-12-27 18:55:11,767 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_respond:111 || INFO | Persisting a reply fault for well 3
+2018-12-27 18:55:23,702 |  FirebaseDriver.FirebaseDriver | MainThread   | faults_increment_failed_transmit: 89 || INFO | Persisting a transmission fault for well 3

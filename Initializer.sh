@@ -19,7 +19,7 @@ then
 	
 	# Run Gateway scripts
 	cd mimir-well-monitoring
-	python testing.py &
+	python reading_synch.py &
 	python i2c_module.py &
 	cd ..
 	
