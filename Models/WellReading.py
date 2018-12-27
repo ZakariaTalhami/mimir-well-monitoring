@@ -35,11 +35,11 @@ class WellReading():
             logger.error("Invalid well reference")
             logger.debug("{} is an invalid Well Reference".format(well))
             raise ValueError
-        self.__level = raw_data
+        self.__level = self.__well.get_height - raw_data
         self.__id = reading_id
         self.__timestamp = timestamp
         if volume == 0:
-            self.__volume = self.calculate_volume(raw_data)
+            self.__volume = self.calculate_volume(self.__level)
         else:
             self.__volume = volume
 
@@ -71,21 +71,21 @@ class WellReading():
             "Timestamp": self.__timestamp
         }
 
-    def calculate_volume(self, raw_data):
+    def calculate_volume(self, level):
         """
             Calculate the volume of a well, using the water level passed and the well information stored in the class
 
             1. Check if the raw data is a float or int and a positive value, if not raise ValueError
             2. Extract Well surface area
             3. Calculate volume = surface area * measured water level
-        :param raw_data: water level
+        :param level: water level
         :return: water volume in the well
         :raises ValueError if the passed value is not float or int
         """
         logger.info("Calculating Volume")
-        if isinstance(raw_data, float) or isinstance(raw_data, int):
-            if raw_data > 0:
-                return round(self.__well.get_area() * raw_data, 3)
+        if isinstance(level, float) or isinstance(level, int):
+            if level > 0:
+                return round(self.__well.get_area() * level, 3)
         logger.error("Invalid raw data")
         logger.debug("{} is an invalid raw data");
         raise ValueError

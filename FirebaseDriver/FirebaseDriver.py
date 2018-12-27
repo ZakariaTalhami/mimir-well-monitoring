@@ -85,6 +85,43 @@ class CloudConnect:
         logger.info("Save to cloud was successful")
         return True
 
+    def faults_increment_failed_transmit(self, id):
+        logger.info("Persisting a transmission fault for well {}".format(id))
+        try:
+            fault_ref = self.db.collection("Well-Fault").document("Well_{}".format(id))
+            if fault_ref.get()._exists:
+                doc = fault_ref.get().to_dict()
+                count = doc.get("transmission", 0)
+                count = count + 1
+                doc["transmission"] = count
+                fault_ref.set(doc)
+            else:
+                fault_ref.set({'transmission': 1})
+
+        except:
+            logger.error("Failed to increment transmission fault")
+            return False
+        return True
+
+
+    def faults_increment_failed_respond(self, id):
+        logger.info("Persisting a reply fault for well {}".format(id))
+        try:
+            fault_ref = self.db.collection("Well-Fault").document("Well_{}".format(id))
+            if fault_ref.get()._exists:
+                doc = fault_ref.get().to_dict()
+                count = doc.get("respond", 0)
+                count = count + 1
+                doc["respond"] = count
+                fault_ref.set(doc)
+            else:
+                fault_ref.set({'respond': 1})
+        except:
+            logger.error("Failed to increment transmission fault")
+            return False
+        return True
+
+
 
 if __name__ == "__main__":
     wellDao = WellDAO()

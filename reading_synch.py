@@ -1,10 +1,19 @@
 import logging
 import threading
 import time
-
+import logging.config
 from DBHandlers.WellReadingDAO import WellReadingDAO
 from FirebaseDriver.FirebaseDriver import CloudConnect
 
+
+def init_logging():
+    logging.config.fileConfig('logs//logger.conf', disable_existing_loggers=False)
+    logging.info("-------------------------------------------------------- |")
+    logging.info("-------           New Logging session            ------- |")
+    logging.info("-------------------------------------------------------- |")
+
+
+init_logging()
 logger = logging.getLogger(__name__);
 
 
@@ -42,3 +51,8 @@ class ReadingSynch(threading.Thread):
             else:
                 logger.debug("ReadingSynch taking a LONG SLEEP")
                 time.sleep(self.__LONG_SLEEP)
+
+
+if __name__ == '__main__':
+    sync = ReadingSynch()
+    sync.run()
