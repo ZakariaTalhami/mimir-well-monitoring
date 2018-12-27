@@ -96,7 +96,7 @@ class Well:
         """
         return self.__offset
 
-    def set_height(self, offset):
+    def set_offset(self, offset):
         """
             Set the well's water offset
         :param offset: max water level offset from well's led
