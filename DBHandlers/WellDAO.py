@@ -25,8 +25,8 @@ class WellDAO:
         logger.debug("saving: \n{}".format(well))
         if isinstance(well, Well):
             self.well = well
-            query = "INSERT INTO {}( id , area , height)  VALUES(? , ? , ?)".format(self.__tablename__)
-            param = (self.well.get_well_id(), self.well.get_area(), self.well.get_height())
+            query = "INSERT INTO {}( id , area , height , offset)  VALUES(? , ? , ? , ?)".format(self.__tablename__)
+            param = (self.well.get_well_id(), self.well.get_area(), self.well.get_height(),  self.well.get_offset())
             self.__db_driver.insert(query, param)
         else:
             logging.error("Wrong value type for Well")
@@ -43,7 +43,7 @@ class WellDAO:
         logger.debug("Query result \n{}".format(result))
         well_list = []
         for entry in result:
-            well_list.append(Well(entry[0], entry[1], entry[2]))
+            well_list.append(Well(entry[0], entry[1], entry[2], entry[3]))
         return well_list
 
     def read_by_id(self, select_id):
@@ -62,7 +62,7 @@ class WellDAO:
             logger.info("Well not found in the database")
             return False
         logger.debug("Result: {}".format(entry))
-        return Well(entry[0], entry[1], entry[2])
+        return Well(entry[0], entry[1], entry[2] , entry[3])
 
     def update(self, well):
         """
@@ -72,8 +72,9 @@ class WellDAO:
         """
         if isinstance(well, Well):
             logger.info("Updating well with id = {}".format(well.get_well_id()))
-            query = "UPDATE {} SET area = {} , height = {} WHERE id = {}".format(self.__tablename__, well.get_area(),
-                                                                                 well.get_height(), well.get_well_id())
+            query = "UPDATE {} SET area = {} , height = {} , offset = {} WHERE id = {}".format(self.__tablename__, well.get_area(),
+                                                                                 well.get_height(), well.get_well_id(),
+                                                                                               well.get_offset())
             self.__db_driver.update(query)
         else:
             raise ValueError

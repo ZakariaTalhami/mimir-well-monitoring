@@ -7,18 +7,20 @@ class Well:
     """
         Well Class that contains Well UUID, water surface area and height of the well
     """
-    def __init__(self, well_id, area, height):
+    def __init__(self, well_id, area, height , offset):
         logger.info("Init Well")
         logger.debug("init well({},{},{})".format(well_id,area,height))
         self.__well_id = well_id
         self.__area = area
         self.__height = height
+        self.__offset = offset
 
     def __repr__(self):
         # logger.info("printing a Well")
         wellstr = "\nWell {0}:".format(self.get_well_id())
         wellstr += "\n\t water area = {0},".format(self.get_area())
-        wellstr += "\n\t Well Height = {0}.".format(self.get_height())
+        wellstr += "\n\t Well Height = {0}".format(self.get_height())
+        wellstr += "\n\t Well Offset = {0},".format(self.get_offset())
         # logger.debug("\n" + wellstr)
         return wellstr
 
@@ -26,7 +28,8 @@ class Well:
         # logger.info("printing a Well")
         wellstr = "\nWell {0}:".format(self.get_well_id())
         wellstr += "\n\t water area = {0},".format(self.get_area())
-        wellstr += "\n\t Well Height = {0}.".format(self.get_height())
+        wellstr += "\n\t Well Height = {0},".format(self.get_height())
+        wellstr += "\n\t Well Offset = {0}".format(self.get_offset())
         # logger.debug("\n" + wellstr)
         return wellstr
 
@@ -37,7 +40,8 @@ class Well:
         """
         return {
             'Area': self.__area,
-            'Height': self.__height
+            'Height': self.__height,
+            'Offset': self.__offset
         }
 
     def get_well_id(self):
@@ -84,3 +88,19 @@ class Well:
         """
         if isinstance(height, float):
             self.__height = height
+
+    def get_offset(self):
+        """
+            Get the well's water offset
+        :return: max water level offset from well's led
+        """
+        return self.__offset
+
+    def set_offset(self, offset):
+        """
+            Set the well's water offset
+        :param offset: max water level offset from well's led
+        """
+        if isinstance(offset, float):
+            self.__offset= offset
+
