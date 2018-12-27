@@ -29,7 +29,7 @@ class CloudConnect:
         logger.info("Init Cloud Connection")
         cred = credentials.Certificate(
             str(path / "waterlevelmonitoringsyst-3ca70-firebase-adminsdk-u40sf-09a38a7e8f.json"))
-        if(not len(firebase_admin._apps)):
+        if (not len(firebase_admin._apps)):
             firebase_admin.initialize_app(cred, {
                 'projectId': u"waterlevelmonitoringsyst-3ca70",
             })
@@ -51,7 +51,7 @@ class CloudConnect:
         reads = read_ref.get()
         reads = reads.to_dict()
         try:
-            well = Well(well_id , reads['Area'] , reads['Height'])
+            well = Well(well_id, reads['Area'], reads['Height'], reads['Offset'])
             logger.debug("Read from the cloud \n {}".format(well))
         except:
             logger.error("Failed to read from cloud. \n {}".format(sys.exc_info()))
@@ -64,7 +64,7 @@ class CloudConnect:
         try:
             wells = self.db.collection(u"Well-Nodes").get()
             for well in wells:
-                well_list.append(Well(well.id.split("_")[1] , well.get("Area") , well.get("Height")))
+                well_list.append(Well(well.id.split("_")[1], well.get("Area"), well.get("Height"), well.get("Offset")))
             logger.debug(well_list)
         except:
             logger.error("Failed to read wells from cloud.\n{}".format(sys.exc_info()))
@@ -103,7 +103,6 @@ class CloudConnect:
             return False
         return True
 
-
     def faults_increment_failed_respond(self, id):
         logger.info("Persisting a reply fault for well {}".format(id))
         try:
@@ -120,7 +119,6 @@ class CloudConnect:
             logger.error("Failed to increment transmission fault")
             return False
         return True
-
 
 
 if __name__ == "__main__":
