@@ -1,9 +1,12 @@
 import logging
+import math
 import pprint
 import sqlite3
 import time
 from datetime import datetime
 from random import Random
+
+from matplotlib.pyplot import plot, show
 
 import Linker
 from DBHandlers.DBDriver import DBDriver
@@ -71,18 +74,18 @@ randint = rand.randint(0, 1000)
 # # db.insert_data("hello", main="TEXT", comesafter=
 
 
-#well_dao = WellDAO()
-#well_list = well_dao.read_all()
-#UUID_list = [x.get_well_id() for x in well_list]
-#gen = DataGenerator()
-#gen.set_count(5)
-#gen.set_uuid_list(UUID_list)
-#start = time.time()
-#gen.generator()
-#end = time.time()
+# well_dao = WellDAO()
+# well_list = well_dao.read_all()
+# UUID_list = [x.get_well_id() for x in well_list]
+# gen = DataGenerator()
+# gen.set_count(5)
+# gen.set_uuid_list(UUID_list)
+# start = time.time()
+# gen.generator()
+# end = time.time()
 # # #
-#tester = TestNoI2C(5 , "test.csv")
-#tester.run()
+# tester = TestNoI2C(5 , "test.csv")
+# tester.run()
 
 # con = CloudConnect()
 # ret = con.read_all_wells()
@@ -91,15 +94,50 @@ randint = rand.randint(0, 1000)
 # wells = wellDao.read_all()
 # con = CloudConnect(u"waterlevelmonitoringsyst-3ca70")
 # for well in wells:
-	# con.save_well(well)
+# con.save_well(well)
 
 # synch = ReadingSynch()
 # synch.start()
+# dao = WellDAO()
+# fire = CloudConnect()
+# wells = fire.read_all_wells()
+# print(dao.get_well_id_list())
+
+values = []
+for x in range(0, 100):
+    values.append(100 * math.log10(x + 1) + 100)
+
+for x in range(100, 200):
+    values.append(50 * math.sin((x - 100) / 10) + 100 * math.log10(x + 1) + 100)
+
+for x in range(200, 500):
+    values.append(10 * math.sin((x - 100) / 10) + 100 * math.log10(x + 1) + 40)
+
+plot(range(0, 500), values)
+show()
+
+welldao = WellDAO()
+wells = welldao.read_all()
 fire = CloudConnect()
-wells = fire.read_all_wells()
-raw = 50
-Welldao = WellDAO()
-print(Welldao.read_by_id(1))
+
+for well in wells:
+    readings = []
+    for value in values:
+        # Reading(well.get_well_id(), value, datetime.now())
+        # readings.append()
+        well_reading = WellReading(well, value, datetime.now())
+        fire.save_reading(well_reading)
+
+# for well in wells:
+#     try:
+#         dao.save(
+#             well
+#         )
+#     except:
+#         print(" {} failed".format(well.get_well_id()))
+# raw = 50
+# Welldao = WellDAO()
+# print(Welldao.read_by_id(1))
 # for well in wells:
 #     Welldao.save(well)
 #     WellReading(well , raw , datetime.now())
