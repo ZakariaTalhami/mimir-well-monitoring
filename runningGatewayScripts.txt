@@ -1,0 +1,2 @@
+pi         782  0.0  0.5   9752  5536 tty1     D+   09:24   0:00 python reading_synch.py
+pi         783  0.0  0.5   9496  5112 tty1     R+   09:24   0:00 python i2c_module.py

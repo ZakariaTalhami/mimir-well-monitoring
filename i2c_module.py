@@ -10,7 +10,7 @@ from FirebaseDriver.FirebaseDriver import CloudConnect
 from Linker.Linker import Linker
 from Models.Reading import Reading
 from datetime import datetime
-
+import sys
 
 def init_logging():
     logging.config.fileConfig('logs//logger.conf', disable_existing_loggers=False)
@@ -42,11 +42,11 @@ class i2cMaster:
         well_list = self.__firebase.read_all_wells()
         # If connection with the cloud fails,
         # read from the local database
-        if not well_list:
-            well_list = self.__welldao.read_all()
+        #if not well_list:
+        #    well_list = self.__welldao.read_all()
         # Filter out only the Well IDs
         well_ids = [well.get_well_id() for well in well_list]
-        logger.debug("Got ids of :> {}".format(",".join(well_ids)))
+        logger.debug("Got ids of :> {}".format(",".join(str(well_ids))))
         return well_ids
 
     def get_reading_i2c(self, well_id: int):
@@ -57,8 +57,9 @@ class i2cMaster:
         """
         # send command and id
         logger.info("Sending to slave CMD {} and well id {}".format(READ_CMD, well_id))
+        print("{} {}".format(sys.getsizeof(well_id),sys.getsizeof(READ_CMD)))
         self.__bus.write_byte_data(self.__slave_address, READ_CMD, well_id)
-        time.sleep(1)
+        time.sleep(5)
         # receive float / 4 bytes
         logger.info("Reading from the slave with CMD {}".format(READ_CMD))
         raw = self.__bus.read_i2c_block_data(self.__slave_address, READ_CMD, 4)
