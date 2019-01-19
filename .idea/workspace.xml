@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$USER_HOME$/Documents/Personal/CigarML/assignment.py" line="69" />
     <bookmark url="file://$USER_HOME$/Desktop/testing.py" line="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e259c32-1440-42f1-89d4-ac722e968ae8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBHandlers/WellDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBHandlers/WellDAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i2c_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/i2c_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/WellReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/WellReading.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,9 +80,9 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="6" />
+          <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -119,7 +115,7 @@
           <entry key="Python Console" value="836" />
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="7" />
-          <entry key="py" value="25322" />
+          <entry key="py" value="25336" />
           <entry key="sh" value="18" />
           <entry key="sql" value="106" />
         </counts>
@@ -127,7 +123,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="26158" />
+          <entry key="Python" value="26172" />
           <entry key="SQL" value="29" />
           <entry key="Scratch" value="77" />
         </counts>
@@ -141,21 +137,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DBHandlers/WellDAO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="850">
               <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1546219356022" expanded="true" signature="3261:3267" ph="..." />
+                <marker date="1547929638012" expanded="true" signature="3261:3267" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="340">
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -187,11 +182,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/i2c_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="121" column="47" selection-start-line="121" selection-start-column="47" selection-end-line="121" selection-end-column="47" />
+            <state relative-caret-position="165">
+              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -257,12 +252,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Initializer.sh" />
         <option value="$PROJECT_DIR$/FirebaseDriver/FirebaseDriver.py" />
-        <option value="$PROJECT_DIR$/Models/WellReading.py" />
         <option value="$PROJECT_DIR$/Models/Well.py" />
         <option value="$PROJECT_DIR$/DBHandlers/DBDriver.py" />
         <option value="$PROJECT_DIR$/DBHandlers/WellDAO.py" />
         <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/i2c_module.py" />
+        <option value="$PROJECT_DIR$/Models/WellReading.py" />
       </list>
     </option>
   </component>
@@ -289,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,13 +305,17 @@
             <path>
               <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="mimir-well-monitoring" type="462c0819:PsiDirectoryNode" />
+              <item name="Linker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mimir-well-monitoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mimir-well-monitoring" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,8 +549,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118791945" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12013423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32867134" />
@@ -566,7 +567,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.49932885" weight="0.32743362" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013423" side_tool="true" weight="0.32996207" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932885" weight="0.15044248" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932885" visible="true" weight="0.32743362" />
       <window_info anchor="bottom" id="Python Console" order="14" sideWeight="0.49932885" weight="0.32743362" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -854,19 +855,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DBHandlers/WellDAO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="850">
           <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1546219356022" expanded="true" signature="3261:3267" ph="..." />
+            <marker date="1547929638012" expanded="true" signature="3261:3267" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -900,11 +893,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/i2c_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="121" column="47" selection-start-line="121" selection-start-column="47" selection-end-line="121" selection-end-column="47" />
+        <state relative-caret-position="165">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/WellReading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
         </state>
       </provider>
     </entry>

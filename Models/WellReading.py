@@ -86,6 +86,8 @@ class WellReading():
         if isinstance(level, float) or isinstance(level, int):
             if level > 0:
                 return round(self.__well.get_area() * level, 3)
+            else:
+                return 0
         logger.error("Invalid raw data")
         logger.debug("{} is an invalid raw data");
         raise ValueError
