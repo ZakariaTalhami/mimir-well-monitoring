@@ -36,6 +36,8 @@ class WellReading():
             logger.debug("{} is an invalid Well Reference".format(well))
             raise ValueError
         self.__level = self.__well.get_height() - raw_data + self.__well.get_offset()
+        if self.__level < 0:
+            self.__level = 0
         self.__id = reading_id
         self.__timestamp = timestamp
         if volume == 0:
