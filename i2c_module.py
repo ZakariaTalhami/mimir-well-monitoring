@@ -114,7 +114,7 @@ class i2cMaster:
                     elif raw > 0:
                         reading = Reading(id, raw, datetime.now())
                         linker.link_and_persist(reading)
-                time.sleep(10)
+                time.sleep(3600)
             except KeyboardInterrupt:
                 quit()
 
